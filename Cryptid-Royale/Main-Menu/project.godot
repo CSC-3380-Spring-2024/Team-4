@@ -11,14 +11,21 @@ config_version=5
 [application]
 
 config/name="Crypt-Menu"
-run/main_scene="res://title_screen.tscn"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
+window/size/viewport_width=426
+window/size/viewport_height=240
 window/size/mode=3
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
 project/assembly_name="Crypt-Menu"
+
+[filesystem]
+
+import/blender/enabled=false

@@ -1,19 +1,79 @@
 extends Control
 
+@onready var title = $"Title-Screne";
+@onready var menu = $"Main-Menu";
+@onready var play = $"Play-Choices";
+@onready var options = $Options;
+@onready var audio = $Audio;
+@onready var home = $Home;
+@onready var map = $Map; 
 
+func _ready():
+	title.show();
+	menu.hide();
+	play.hide();
+	home.hide();
+	options.hide();
+	audio.hide();
+	home.hide();
+	map.hide();
 
+#show one node and hide the other
+func show_and_hide(first, second):
+	first.show();
+	second.hide();
 
+# Start button to transition from the title screen to the Main menu
 func _on_play_pressed():
-	get_tree().change_scene_to_file("res://play_choices.tscn");
+	show_and_hide(menu, title);
 
+# Button to see Play options
+func _on_start_pressed():
+	show_and_hide(play, menu)
 
-func _on_settings_pressed():
-	get_tree().change_scene_to_file("res://Settings.tscn");
+#Button to go to the Options
+func _on_options_pressed():
+	show_and_hide(options, menu);
 
-
-func _on_quit_pressed():
+# Button to close game
+func _on_exit_pressed():
 	get_tree().quit();
 
+# Button to go to audio settings
+func _on_audio_pressed():
+	show_and_hide(audio, options);
 
-func _on_cryptdex_pressed():
-	pass # Replace with function body.
+# Button to go back to Main menu form Settings
+func _on_back_settings_pressed():
+	show_and_hide(menu, options);
+
+# Function to adjust sound sliders
+func volume(bus_index, value):
+	AudioServer.set_bus_volume_db(bus_index, value)
+
+# Master volume settings slider
+func _on_master_value_changed(value):
+	volume(0, -value);
+
+# Music settings slider
+func _on_music_value_changed(value):
+	volume(1, -value);
+
+# Sound FX settings slider
+func _on_sound_fx_value_changed(value):
+	volume(2, -value);
+
+# Button to go back from the Play choices to the Main menu
+func _on_back_choices_pressed():
+	show_and_hide(menu, play);
+
+# button to go to audio settings
+func _on_back_audio_pressed():
+	show_and_hide(options, audio);
+
+# button for going home
+func _on_home_pressed():
+	show_and_hide(home, play);
+
+func _on_travel_pressed():
+	show_and_hide(map, play);
