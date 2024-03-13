@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dufer4k3r1k0e"
+path="res://.godot/imported/Night Shade  NO COPYRIGHT 8-bit Music.mp3-ac5431d7a739dc3f5d455c036d3b7aa7.mp3str"
+
+[deps]
+
+source_file="res://music/Night Shade  NO COPYRIGHT 8-bit Music.mp3"
+dest_files=["res://.godot/imported/Night Shade  NO COPYRIGHT 8-bit Music.mp3-ac5431d7a739dc3f5d455c036d3b7aa7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
