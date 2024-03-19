@@ -247,8 +247,6 @@ layout_mode = 1
 
 [node name="Map" parent="." instance=ExtResource("5_pkr8y")]
 layout_mode = 1
-offset_left = -3.0
-offset_right = -3.0
 
 [connection signal="pressed" from="Title-Screne/TextureRect/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Start" to="." method="_on_start_pressed"]
