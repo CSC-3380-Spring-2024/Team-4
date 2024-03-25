@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://menu.gd" id="1_uahwm"]
 [ext_resource type="AudioStream" uid="uid://dufer4k3r1k0e" path="res://music/Night Shade  NO COPYRIGHT 8-bit Music.mp3" id="2_pp4ku"]
 [ext_resource type="Texture2D" uid="uid://cdq1007ibj6b1" path="res://Pics/Crypt-Cover.png" id="2_q58ed"]
-[ext_resource type="PackedScene" uid="uid://ddvfmgqu55y0c" path="res://home.tscn" id="4_ppayp"]
-[ext_resource type="PackedScene" uid="uid://cm0jwlxsrq065" path="res://map.tscn" id="5_pkr8y"]
+[ext_resource type="PackedScene" path="res://home.tscn" id="4_ppayp"]
+[ext_resource type="PackedScene" path="res://map.tscn" id="5_pkr8y"]
 
 [node name="Menu" type="Control"]
 process_mode = 1
@@ -22,7 +22,6 @@ autoplay = true
 bus = &"Music"
 
 [node name="Title-Screne" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -89,52 +88,6 @@ text = "Settings"
 [node name="Exit" type="Button" parent="Main-Menu/Menu-Options"]
 layout_mode = 2
 text = "Exit"
-
-[node name="Play-Choices" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Play-Choices"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -51.5
-offset_top = -68.0
-offset_right = 51.5
-offset_bottom = 68.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Home" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Home"
-
-[node name="Travel" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Travel"
-
-[node name="Battle" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Quick Battle"
-
-[node name="Back-Choices" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Back"
 
 [node name="Options" type="Control" parent="."]
 visible = false
@@ -226,6 +179,7 @@ layout_mode = 2
 size_flags_stretch_ratio = 0.0
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Audio"]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -243,18 +197,16 @@ layout_mode = 2
 text = "Back"
 
 [node name="Home" parent="." instance=ExtResource("4_ppayp")]
-layout_mode = 1
+visible = false
 
 [node name="Map" parent="." instance=ExtResource("5_pkr8y")]
+visible = false
 layout_mode = 1
 
 [connection signal="pressed" from="Title-Screne/TextureRect/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Play-Choices/VBoxContainer/Home" to="." method="_on_home_pressed"]
-[connection signal="pressed" from="Play-Choices/VBoxContainer/Travel" to="." method="_on_travel_pressed"]
-[connection signal="pressed" from="Play-Choices/VBoxContainer/Back-Choices" to="." method="_on_back_choices_pressed"]
 [connection signal="pressed" from="Options/VBoxContainer/Audio" to="." method="_on_audio_pressed"]
 [connection signal="pressed" from="Options/VBoxContainer/Back-Settings" to="." method="_on_back_settings_pressed"]
 [connection signal="value_changed" from="Audio/Sliders/Sound FX" to="." method="_on_sound_fx_value_changed"]

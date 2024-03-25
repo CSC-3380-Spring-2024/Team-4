@@ -1,15 +1,155 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddvfmgqu55y0c"]
+[gd_scene load_steps=11 format=3 uid="uid://ddvfmgqu55y0c"]
 
-[ext_resource type="Texture2D" uid="uid://cw5gdenuaw0or" path="res://icon.svg" id="1_3rpgt"]
+[ext_resource type="Script" path="res://home.gd" id="1_1qry0"]
+[ext_resource type="Script" path="res://Player.cs" id="2_dul5w"]
+[ext_resource type="Texture2D" uid="uid://b7fx7p4jr7y1" path="res://Sprites/Player-Sprite.png" id="3_qf05m"]
 
-[node name="Home" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_krdrt"]
+size = Vector2(24, 40.5)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(203, 103)
-texture = ExtResource("1_3rpgt")
+[sub_resource type="Animation" id="Animation_cphew"]
+resource_name = "walking down"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [26]
+}
+
+[sub_resource type="Animation" id="Animation_73ap4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [18]
+}
+
+[sub_resource type="Animation" id="Animation_514g0"]
+resource_name = "walking-right"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [27]
+}
+
+[sub_resource type="Animation" id="Animation_au0wd"]
+resource_name = "walking-up"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [8]
+}
+
+[sub_resource type="Animation" id="Animation_lr5aw"]
+resource_name = "walking-left"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [17]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2a28c"]
+_data = {
+"RESET": SubResource("Animation_73ap4"),
+"walking down": SubResource("Animation_cphew"),
+"walking-left": SubResource("Animation_lr5aw"),
+"walking-right": SubResource("Animation_514g0"),
+"walking-up": SubResource("Animation_au0wd")
+}
+
+[node name="Home" type="Node2D"]
+script = ExtResource("1_1qry0")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+script = ExtResource("2_dul5w")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+scale = Vector2(0.561404, 0.634921)
+texture = ExtResource("3_qf05m")
+centered = false
+hframes = 9
+vframes = 4
+frame = 18
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(20, 19.75)
+shape = SubResource("RectangleShape2D_krdrt")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
+libraries = {
+"": SubResource("AnimationLibrary_2a28c")
+}
+
+[node name="AnimationTree" type="AnimationTree" parent="Player"]
+deterministic = false
+reset_on_save = false
+callback_mode_process = 0
+libraries = {
+"": SubResource("AnimationLibrary_2a28c")
+}
+anim_player = NodePath("../AnimationPlayer")
+
+[node name="Back" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Back"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_left = 320.0
+offset_right = 423.0
+offset_bottom = 136.0
+
+[node name="Map" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Map"
+
+[node name="Quick-Battle" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quick Battle"
+
+[node name="Shop" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Shop"
+
+[node name="Deck" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Deck"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="VBoxContainer/Map" to="." method="_on_map_pressed"]
