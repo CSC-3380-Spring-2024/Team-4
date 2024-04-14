@@ -13,7 +13,7 @@ func _process(delta):
 
 
 func _on_map_pressed():
-	get_tree().change_scene_to_file("res://map.tscn");
+	get_tree().change_scene_to_file("res://scenes/map/map.tscn");
 
 
 func _on_back_pressed():
