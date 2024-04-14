@@ -115,7 +115,7 @@ func _on_map_room_selected(room: Room) -> void:
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://home.tscn");
+	get_tree().change_scene_to_file("res://scenes/home/home.tscn");
 
 
 func _on_button_2_pressed():

@@ -1,10 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://c30fcql171246"]
+[gd_scene load_steps=7 format=3 uid="uid://c30fcql171246"]
 
-[ext_resource type="Script" path="res://scenes/menu/menu.gd" id="1_kghuh"]
-[ext_resource type="AudioStream" uid="uid://dufer4k3r1k0e" path="res://music/Night Shade  NO COPYRIGHT 8-bit Music.mp3" id="2_imfri"]
-[ext_resource type="Texture2D" uid="uid://cdq1007ibj6b1" path="res://Pics/Crypt-Cover.png" id="3_m8jqr"]
-[ext_resource type="PackedScene" uid="uid://ddvfmgqu55y0c" path="res://home.tscn" id="4_h5e5t"]
-[ext_resource type="PackedScene" uid="uid://cm0jwlxsrq065" path="res://map.tscn" id="5_78url"]
+[ext_resource type="Script" path="res://scenes/menu/menu.gd" id="1_uahwm"]
+[ext_resource type="AudioStream" uid="uid://dufer4k3r1k0e" path="res://music/Night Shade  NO COPYRIGHT 8-bit Music.mp3" id="2_pp4ku"]
+[ext_resource type="Texture2D" uid="uid://cdq1007ibj6b1" path="res://Pics/Crypt-Cover.png" id="2_q58ed"]
+[ext_resource type="PackedScene" uid="uid://ddvfmgqu55y0c" path="res://scenes/home/home.tscn" id="4_ppayp"]
+[ext_resource type="PackedScene" uid="uid://cm0jwlxsrq065" path="res://scenes/map/map.tscn" id="5_pkr8y"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_odt0w"]
+light_mode = 1
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 2
+particles_anim_loop = true
 
 [node name="Menu" type="Control"]
 process_mode = 1
@@ -14,10 +21,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_kghuh")
+script = ExtResource("1_uahwm")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_imfri")
+stream = ExtResource("2_pp4ku")
 autoplay = true
 bus = &"Music"
 
@@ -40,7 +47,7 @@ offset_bottom = 784.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(0.41833, 0.234623)
-texture = ExtResource("3_m8jqr")
+texture = ExtResource("2_q58ed")
 
 [node name="Play" type="Button" parent="Title-Screne/TextureRect"]
 layout_mode = 1
@@ -59,6 +66,7 @@ scale = Vector2(0.991948, 1)
 text = "Press to start"
 
 [node name="Main-Menu" type="Control" parent="."]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -88,56 +96,6 @@ text = "Settings"
 [node name="Exit" type="Button" parent="Main-Menu/Menu-Options"]
 layout_mode = 2
 text = "Exit"
-
-[node name="GridTest" type="Button" parent="Main-Menu/Menu-Options"]
-layout_mode = 2
-text = "grid"
-
-[node name="Play-Choices" type="Control" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Play-Choices"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -51.5
-offset_top = -68.0
-offset_right = 51.5
-offset_bottom = 68.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Home" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Home"
-
-[node name="Travel" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Travel"
-
-[node name="Battle" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Quick Battle"
-
-[node name="Back-Choices" type="Button" parent="Play-Choices/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "Back"
 
 [node name="Options" type="Control" parent="."]
 visible = false
@@ -207,23 +165,32 @@ text = "Sound FX"
 
 [node name="Sliders" type="VBoxContainer" parent="Audio"]
 layout_mode = 2
-offset_left = 346.0
-offset_top = 163.0
-offset_right = 644.0
-offset_bottom = 219.0
+offset_left = 347.0
+offset_top = 156.0
+offset_right = 645.0
+offset_bottom = 212.0
 rotation = -3.14159
 scale = Vector2(0.540166, 1.44248)
 size_flags_horizontal = 8
 
 [node name="Sound FX" type="HSlider" parent="Audio/Sliders"]
+modulate = Color(0.803922, 0.85098, 0.988235, 1)
+self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
+material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 
 [node name="Music" type="HSlider" parent="Audio/Sliders"]
+modulate = Color(0.803922, 0.85098, 0.988235, 1)
+self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
+material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 
 [node name="Master" type="HSlider" parent="Audio/Sliders"]
+modulate = Color(0.803922, 0.85098, 0.988235, 1)
+self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
+material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 
@@ -244,19 +211,16 @@ grow_vertical = 0
 layout_mode = 2
 text = "Back"
 
-[node name="Home" parent="." instance=ExtResource("4_h5e5t")]
+[node name="Home" parent="." instance=ExtResource("4_ppayp")]
+visible = false
 
-[node name="Map" parent="." instance=ExtResource("5_78url")]
-layout_mode = 1
+[node name="Map" parent="." instance=ExtResource("5_pkr8y")]
+visible = false
 
 [connection signal="pressed" from="Title-Screne/TextureRect/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Exit" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Main-Menu/Menu-Options/GridTest" to="." method="_on_grid_test_pressed"]
-[connection signal="pressed" from="Play-Choices/VBoxContainer/Home" to="." method="_on_home_pressed"]
-[connection signal="pressed" from="Play-Choices/VBoxContainer/Travel" to="." method="_on_travel_pressed"]
-[connection signal="pressed" from="Play-Choices/VBoxContainer/Back-Choices" to="." method="_on_back_choices_pressed"]
 [connection signal="pressed" from="Options/VBoxContainer/Audio" to="." method="_on_audio_pressed"]
 [connection signal="pressed" from="Options/VBoxContainer/Back-Settings" to="." method="_on_back_settings_pressed"]
 [connection signal="value_changed" from="Audio/Sliders/Sound FX" to="." method="_on_sound_fx_value_changed"]

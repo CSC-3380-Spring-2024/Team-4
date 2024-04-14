@@ -1,22 +1,24 @@
+class_name Menu
+
 extends Control
 
 @onready var title = $"Title-Screne";
 @onready var menu = $"Main-Menu";
-@onready var play = $"Play-Choices";
 @onready var options = $Options;
 @onready var audio = $Audio;
 @onready var home = $Home;
 @onready var map = $Map; 
 
+
+
 func _ready():
 	title.show();
 	menu.hide();
-	play.hide();
 	home.hide();
 	options.hide();
 	audio.hide();
 	home.hide();
-	map.hide();
+	
 
 #show one node and hide the other
 func show_and_hide(first, second):
@@ -29,7 +31,7 @@ func _on_play_pressed():
 
 # Button to see Play options
 func _on_start_pressed():
-	show_and_hide(play, menu)
+	get_tree().change_scene_to_file("res://scenes/home/home.tscn");
 
 #Button to go to the Options
 func _on_options_pressed():
@@ -63,18 +65,10 @@ func _on_music_value_changed(value):
 func _on_sound_fx_value_changed(value):
 	volume(2, -value);
 
-# Button to go back from the Play choices to the Main menu
-func _on_back_choices_pressed():
-	show_and_hide(menu, play);
 
 # button to go to audio settings
 func _on_back_audio_pressed():
 	show_and_hide(options, audio);
 
-# button for going home
-func _on_home_pressed():
-	show_and_hide(home, play);
 
-func _on_travel_pressed():
-	show_and_hide(map, play);
 
