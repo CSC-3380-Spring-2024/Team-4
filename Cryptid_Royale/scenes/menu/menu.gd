@@ -19,12 +19,11 @@ func _ready():
 	audio.hide();
 	home.hide();
 	
-func click():
-	$"Button-Click".play();
+
+	
 
 #show one node and hide the other
 func show_and_hide(first, second):
-	click();
 	first.show();
 	second.hide();
 

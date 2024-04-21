@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://c30fcql171246"]
 
 [ext_resource type="Script" path="res://scenes/menu/menu.gd" id="1_uahwm"]
-[ext_resource type="AudioStream" uid="uid://dufer4k3r1k0e" path="res://music/Night Shade  NO COPYRIGHT 8-bit Music.mp3" id="2_pp4ku"]
-[ext_resource type="Texture2D" uid="uid://cdq1007ibj6b1" path="res://Pics/Crypt-Cover.png" id="2_q58ed"]
+[ext_resource type="AudioStream" uid="uid://dufer4k3r1k0e" path="res://assets/music/Night Shade  NO COPYRIGHT 8-bit Music.mp3" id="2_pp4ku"]
+[ext_resource type="Texture2D" uid="uid://cdq1007ibj6b1" path="res://assets/Crypt-Cover.png" id="2_q58ed"]
 [ext_resource type="PackedScene" uid="uid://ddvfmgqu55y0c" path="res://scenes/home/home.tscn" id="4_ppayp"]
 [ext_resource type="PackedScene" uid="uid://cm0jwlxsrq065" path="res://scenes/map/map.tscn" id="5_pkr8y"]
 
