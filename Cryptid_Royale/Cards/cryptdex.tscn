@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dnot78jcyq87e"]
+[gd_scene load_steps=10 format=3 uid="uid://dnot78jcyq87e"]
 
 [ext_resource type="Script" path="res://Cards/cryptdex.gd" id="1_obisf"]
 [ext_resource type="Script" path="res://TextureButton.gd" id="2_bcie5"]
@@ -21,6 +21,9 @@ gradient = SubResource("Gradient_0jcb8")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qtu8f"]
 texture = SubResource("GradientTexture2D_50x6w")
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kep7d"]
+blend_mode = 1
 
 [node name="Cryptdex" type="Node2D"]
 scale = Vector2(0.222, 0.222)
@@ -348,3 +351,12 @@ layout_mode = 2
 [node name="Card5" type="TextureButton" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+
+[node name="Button" type="Button" parent="."]
+material = SubResource("CanvasItemMaterial_kep7d")
+offset_right = 112.0
+offset_bottom = 76.0
+scale = Vector2(1.56895, 1.3628)
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
