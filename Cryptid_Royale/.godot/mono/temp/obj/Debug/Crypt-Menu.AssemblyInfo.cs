@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Crypt-Menu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+035d9f73a90f4a975d1148813f78e477f35102c2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6473671a909889f37e6d7147442a067a9af55f10")]
 [assembly: System.Reflection.AssemblyProductAttribute("Crypt-Menu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Crypt-Menu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

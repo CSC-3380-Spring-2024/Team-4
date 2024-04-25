@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "o6W0C50/7qrXQaxXPK2kHEYxuVejz3AU1vDlwp4PVNeYs9pHYViG9dwmukLNcU+kgzLiu7gKaD6YnnPYIvgCiA==",
   "success": true,
   "projectFilePath": "/Users/cdbelala/CryptidRoyale/Team-4/Cryptid_Royale/Crypt-Menu.csproj",
+=======
+  "dgSpecHash": "h2MNP4bt9WGUg8Hw3MAMhNWoNkvWxmFbwGqN6h8h1ALHvBYTh/jQGv3yJZKotkUzegLpSu2P0brnX5IOWdz6hA==",
+  "success": true,
+  "projectFilePath": "/Users/cdbelala/Documents/GitHub/Team-4/Cryptid_Royale/Crypt-Menu.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "/Users/cdbelala/.nuget/packages/godot.sourcegenerators/4.2.1/godot.sourcegenerators.4.2.1.nupkg.sha512",
     "/Users/cdbelala/.nuget/packages/godotsharp/4.2.1/godotsharp.4.2.1.nupkg.sha512",

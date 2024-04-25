@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "/Users/cdbelala/CryptidRoyale/Team-4/Cryptid_Royale/Crypt-Menu.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "/Users/cdbelala/CryptidRoyale/Team-4/Cryptid_Royale/Crypt-Menu.csproj",
         "packagesPath": "/Users/cdbelala/.nuget/packages/",
         "outputPath": "/Users/cdbelala/CryptidRoyale/Team-4/Cryptid_Royale/.godot/mono/temp/obj/",
+=======
+    "/Users/cdbelala/Documents/GitHub/Team-4/Cryptid_Royale/Crypt-Menu.csproj": {}
+  },
+  "projects": {
+    "/Users/cdbelala/Documents/GitHub/Team-4/Cryptid_Royale/Crypt-Menu.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cdbelala/Documents/GitHub/Team-4/Cryptid_Royale/Crypt-Menu.csproj",
+        "projectName": "Crypt-Menu",
+        "projectPath": "/Users/cdbelala/Documents/GitHub/Team-4/Cryptid_Royale/Crypt-Menu.csproj",
+        "packagesPath": "/Users/cdbelala/.nuget/packages/",
+        "outputPath": "/Users/cdbelala/Documents/GitHub/Team-4/Cryptid_Royale/.godot/mono/temp/obj/",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/cdbelala/.nuget/NuGet/NuGet.Config"
