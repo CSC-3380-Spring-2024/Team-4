@@ -26,3 +26,6 @@ func _physics_process(delta):
 			animations.play("Idle")
 	move_and_slide()
 	
+func body_method():
+	pass
+

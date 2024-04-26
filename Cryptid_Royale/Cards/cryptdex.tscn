@@ -1,8 +1,12 @@
-[gd_scene load_steps=10 format=3 uid="uid://dnot78jcyq87e"]
+[gd_scene load_steps=17 format=3 uid="uid://d4n2yueo0c7m3"]
 
-[ext_resource type="Script" path="res://Cards/cryptdex.gd" id="1_obisf"]
+[ext_resource type="Script" path="res://cryptdex.gd" id="1_obisf"]
 [ext_resource type="Script" path="res://TextureButton.gd" id="2_bcie5"]
 [ext_resource type="Texture2D" uid="uid://d142djlm5njuv" path="res://Cards/Borders/Border.png" id="3_nsk11"]
+[ext_resource type="Texture2D" uid="uid://bpvwsuwe36jjy" path="res://Cards/Borders/StatsBack.png" id="4_fhiut"]
+[ext_resource type="Texture2D" uid="uid://skhro5xrtsl" path="res://Cards/Borders/background shade.png" id="5_7d0dq"]
+[ext_resource type="Script" path="res://ExitButton.gd" id="6_uw5we"]
+[ext_resource type="FontFile" uid="uid://dqmsq6m33sfcb" path="res://Cards/Borders/Jersey10-Regular.ttf" id="7_frgdk"]
 
 [sub_resource type="Gradient" id="Gradient_3vqfu"]
 colors = PackedColorArray(0.67451, 0, 0.996078, 1, 1, 1, 1, 1)
@@ -22,8 +26,17 @@ gradient = SubResource("Gradient_0jcb8")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qtu8f"]
 texture = SubResource("GradientTexture2D_50x6w")
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kep7d"]
-blend_mode = 1
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lfqfs"]
+texture = ExtResource("5_7d0dq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_i7lrn"]
+texture = ExtResource("5_7d0dq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h5x7y"]
+texture = ExtResource("5_7d0dq")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n274c"]
+texture = ExtResource("5_7d0dq")
 
 [node name="Cryptdex" type="Node2D"]
 scale = Vector2(0.222, 0.222)
@@ -58,6 +71,7 @@ layout_mode = 2
 [node name="Card1" type="TextureButton" parent="Screen/Current In Deck"]
 custom_minimum_size = Vector2(150, 210)
 layout_mode = 2
+toggle_mode = true
 texture_normal = ExtResource("3_nsk11")
 
 [node name="MarginContainer2" type="MarginContainer" parent="Screen/Current In Deck"]
@@ -67,6 +81,7 @@ layout_mode = 2
 [node name="Card2" type="TextureButton" parent="Screen/Current In Deck"]
 custom_minimum_size = Vector2(150, 210)
 layout_mode = 2
+toggle_mode = true
 texture_normal = ExtResource("3_nsk11")
 
 [node name="MarginContainer3" type="MarginContainer" parent="Screen/Current In Deck"]
@@ -76,6 +91,7 @@ layout_mode = 2
 [node name="Card3" type="TextureButton" parent="Screen/Current In Deck"]
 custom_minimum_size = Vector2(150, 210)
 layout_mode = 2
+toggle_mode = true
 texture_normal = ExtResource("3_nsk11")
 
 [node name="MarginContainer4" type="MarginContainer" parent="Screen/Current In Deck"]
@@ -85,6 +101,7 @@ layout_mode = 2
 [node name="Card4" type="TextureButton" parent="Screen/Current In Deck"]
 custom_minimum_size = Vector2(150, 210)
 layout_mode = 2
+toggle_mode = true
 texture_normal = ExtResource("3_nsk11")
 
 [node name="MarginContainer5" type="MarginContainer" parent="Screen/Current In Deck"]
@@ -94,6 +111,7 @@ layout_mode = 2
 [node name="Card5" type="TextureButton" parent="Screen/Current In Deck"]
 custom_minimum_size = Vector2(150, 210)
 layout_mode = 2
+toggle_mode = true
 texture_normal = ExtResource("3_nsk11")
 stretch_mode = 0
 
@@ -131,6 +149,7 @@ layout_mode = 2
 [node name="Card1" type="TextureButton" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -139,6 +158,7 @@ layout_mode = 2
 [node name="Card2" type="TextureButton" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer3" type="MarginContainer" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -147,6 +167,7 @@ layout_mode = 2
 [node name="Card3" type="TextureButton" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -155,6 +176,7 @@ layout_mode = 2
 [node name="Card4" type="TextureButton" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer5" type="MarginContainer" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -163,6 +185,7 @@ layout_mode = 2
 [node name="Card5" type="TextureButton" parent="Bottom/Cards/Scroll/Row1"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer" type="MarginContainer" parent="Bottom/Cards/Scroll"]
 custom_minimum_size = Vector2(2.08165e-12, 50)
@@ -178,6 +201,7 @@ layout_mode = 2
 [node name="Card1" type="TextureButton" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -186,6 +210,7 @@ layout_mode = 2
 [node name="Card2" type="TextureButton" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer3" type="MarginContainer" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -194,6 +219,7 @@ layout_mode = 2
 [node name="Card3" type="TextureButton" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -202,6 +228,7 @@ layout_mode = 2
 [node name="Card4" type="TextureButton" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer5" type="MarginContainer" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -210,6 +237,7 @@ layout_mode = 2
 [node name="Card5" type="TextureButton" parent="Bottom/Cards/Scroll/Row2"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="Bottom/Cards/Scroll"]
 custom_minimum_size = Vector2(2.08165e-12, 50)
@@ -225,6 +253,7 @@ layout_mode = 2
 [node name="Card1" type="TextureButton" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -233,6 +262,7 @@ layout_mode = 2
 [node name="Card2" type="TextureButton" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer3" type="MarginContainer" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -241,6 +271,7 @@ layout_mode = 2
 [node name="Card3" type="TextureButton" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -249,6 +280,7 @@ layout_mode = 2
 [node name="Card4" type="TextureButton" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer5" type="MarginContainer" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -257,6 +289,7 @@ layout_mode = 2
 [node name="Card5" type="TextureButton" parent="Bottom/Cards/Scroll/Row3"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer3" type="MarginContainer" parent="Bottom/Cards/Scroll"]
 custom_minimum_size = Vector2(2.08165e-12, 50)
@@ -272,6 +305,7 @@ layout_mode = 2
 [node name="Card1" type="TextureButton" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -280,6 +314,7 @@ layout_mode = 2
 [node name="Card2" type="TextureButton" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer3" type="MarginContainer" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -288,6 +323,7 @@ layout_mode = 2
 [node name="Card3" type="TextureButton" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -296,6 +332,7 @@ layout_mode = 2
 [node name="Card4" type="TextureButton" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer5" type="MarginContainer" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -304,6 +341,7 @@ layout_mode = 2
 [node name="Card5" type="TextureButton" parent="Bottom/Cards/Scroll/Row4"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="Bottom/Cards/Scroll"]
 custom_minimum_size = Vector2(2.08165e-12, 50)
@@ -319,6 +357,7 @@ layout_mode = 2
 [node name="Card1" type="TextureButton" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer2" type="MarginContainer" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -327,6 +366,7 @@ layout_mode = 2
 [node name="Card2" type="TextureButton" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer3" type="MarginContainer" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -335,6 +375,7 @@ layout_mode = 2
 [node name="Card3" type="TextureButton" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer4" type="MarginContainer" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -343,6 +384,7 @@ layout_mode = 2
 [node name="Card4" type="TextureButton" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
 [node name="MarginContainer5" type="MarginContainer" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(242, 2.08165e-12)
@@ -351,12 +393,141 @@ layout_mode = 2
 [node name="Card5" type="TextureButton" parent="Bottom/Cards/Scroll/Row5"]
 custom_minimum_size = Vector2(250, 350)
 layout_mode = 2
+toggle_mode = true
 
-[node name="Button" type="Button" parent="."]
-material = SubResource("CanvasItemMaterial_kep7d")
-offset_right = 112.0
-offset_bottom = 76.0
-scale = Vector2(1.56895, 1.3628)
-text = "Back"
+[node name="ThisMenu" type="Control" parent="."]
+visible = false
+custom_minimum_size = Vector2(1100, 600)
+layout_mode = 3
+anchors_preset = 0
+offset_left = 410.0
+offset_top = 240.0
+offset_right = 410.0
+offset_bottom = 240.0
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Background" type="TextureRect" parent="ThisMenu"]
+custom_minimum_size = Vector2(1100, 600)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_fhiut")
+
+[node name="Window" type="VBoxContainer" parent="ThisMenu"]
+custom_minimum_size = Vector2(1100, 600)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TopBar" type="HBoxContainer" parent="ThisMenu/Window"]
+custom_minimum_size = Vector2(2.08165e-12, 100)
+layout_mode = 2
+
+[node name="ExitButton" type="TextureButton" parent="ThisMenu/Window/TopBar"]
+custom_minimum_size = Vector2(200, 2.08165e-12)
+layout_mode = 2
+texture_normal = ExtResource("5_7d0dq")
+stretch_mode = 0
+script = ExtResource("6_uw5we")
+
+[node name="TopSpace" type="MarginContainer" parent="ThisMenu/Window/TopBar"]
+custom_minimum_size = Vector2(275, 2.08165e-12)
+layout_mode = 2
+
+[node name="Stats" type="Label" parent="ThisMenu/Window/TopBar"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 71
+theme_override_styles/normal = SubResource("StyleBoxTexture_lfqfs")
+text = "Stats"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ImgDescr" type="HBoxContainer" parent="ThisMenu/Window"]
+custom_minimum_size = Vector2(1100, 325)
+layout_mode = 2
+
+[node name="cryptidDescr" type="TextEdit" parent="ThisMenu/Window/ImgDescr"]
+custom_minimum_size = Vector2(500, 2.08165e-12)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 25
+editable = false
+
+[node name="cryptidImg" type="TextureRect" parent="ThisMenu/Window/ImgDescr"]
+custom_minimum_size = Vector2(595, 2.08165e-12)
+layout_mode = 2
+
+[node name="StatName" type="HBoxContainer" parent="ThisMenu/Window"]
+custom_minimum_size = Vector2(1100, 80)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ThisMenu/Window/StatName"]
+custom_minimum_size = Vector2(145, 2.08165e-12)
+layout_mode = 2
+
+[node name="Speed" type="Label" parent="ThisMenu/Window/StatName"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxTexture_i7lrn")
+text = "Speed"
+
+[node name="MarginContainer2" type="MarginContainer" parent="ThisMenu/Window/StatName"]
+custom_minimum_size = Vector2(230, 2.08165e-12)
+layout_mode = 2
+
+[node name="Attack" type="Label" parent="ThisMenu/Window/StatName"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxTexture_h5x7y")
+text = "Attack"
+
+[node name="MarginContainer3" type="MarginContainer" parent="ThisMenu/Window/StatName"]
+custom_minimum_size = Vector2(225, 2.08165e-12)
+layout_mode = 2
+
+[node name="Defense" type="Label" parent="ThisMenu/Window/StatName"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxTexture_n274c")
+text = "Defense"
+
+[node name="StatLevel" type="HBoxContainer" parent="ThisMenu/Window"]
+custom_minimum_size = Vector2(1100, 80)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="ThisMenu/Window/StatLevel"]
+custom_minimum_size = Vector2(180, 2.08165e-12)
+layout_mode = 2
+
+[node name="Speed" type="Label" parent="ThisMenu/Window/StatLevel"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxTexture_i7lrn")
+text = "A+"
+
+[node name="MarginContainer2" type="MarginContainer" parent="ThisMenu/Window/StatLevel"]
+custom_minimum_size = Vector2(305, 2.08165e-12)
+layout_mode = 2
+
+[node name="Attack" type="Label" parent="ThisMenu/Window/StatLevel"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxTexture_h5x7y")
+text = "A+"
+
+[node name="MarginContainer3" type="MarginContainer" parent="ThisMenu/Window/StatLevel"]
+custom_minimum_size = Vector2(315, 2.08165e-12)
+layout_mode = 2
+
+[node name="Defense" type="Label" parent="ThisMenu/Window/StatLevel"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("7_frgdk")
+theme_override_font_sizes/font_size = 51
+theme_override_styles/normal = SubResource("StyleBoxTexture_n274c")
+text = "A+"

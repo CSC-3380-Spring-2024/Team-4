@@ -1,11 +1,10 @@
 [gd_scene load_steps=12 format=3 uid="uid://nka4naavdjhg"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_f0x3x"]
-[ext_resource type="Texture2D" uid="uid://b7fx7p4jr7y1" path="res://assets/Sprites/Player-Sprite.png" id="2_shbfy"]
+[ext_resource type="Texture2D" uid="uid://b7fx7p4jr7y1" path="res://Sprites/Player-Sprite.png" id="2_shbfy"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mfint"]
-radius = 17.0
-height = 34.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kso4k"]
+size = Vector2(23, 22)
 
 [sub_resource type="Animation" id="Animation_pkrxr"]
 resource_name = "Idle"
@@ -151,12 +150,12 @@ _data = {
 script = ExtResource("1_f0x3x")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(32, 47)
-shape = SubResource("CapsuleShape2D_mfint")
+position = Vector2(31, 145)
+shape = SubResource("RectangleShape2D_kso4k")
 debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(32, 32)
+position = Vector2(30, 132)
 texture = ExtResource("2_shbfy")
 hframes = 9
 vframes = 4
