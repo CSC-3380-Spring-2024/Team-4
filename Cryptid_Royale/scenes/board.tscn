@@ -1,7 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://dfa1weii15h4v"]
+[gd_scene load_steps=15 format=3 uid="uid://dfa1weii15h4v"]
 
 [ext_resource type="Script" path="res://characterHandler.cs" id="1_vuuah"]
-[ext_resource type="PackedScene" uid="uid://by4d07koladfn" path="res://models/tongueMonster/tongueMonster.tscn" id="2_knud4"]
 [ext_resource type="PackedScene" uid="uid://f1huyy1ap0p3" path="res://models/fishMonster/fishMonster.tscn" id="4_vpc4e"]
 [ext_resource type="PackedScene" uid="uid://f5rvhbmug7dp" path="res://models/goatMan/goatBro.tscn" id="5_i5p1t"]
 [ext_resource type="PackedScene" uid="uid://c6ccg8bankij2" path="res://models/fourleggedReptilemonster/fourleggedMonster.tscn" id="7_0mfh3"]
@@ -54,7 +53,7 @@ environment = SubResource("Environment_v1r04")
 [node name="characterHandler" type="Node" parent="."]
 script = ExtResource("1_vuuah")
 
-[node name="tongueMonster" parent="characterHandler" instance=ExtResource("2_knud4")]
+[node name="tongueMonster" parent="characterHandler" instance=ExtResource("8_e55pe")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 16, 0.824, -31)
 
 [node name="Area3D" type="Area3D" parent="characterHandler/tongueMonster"]

@@ -1,3 +1,8 @@
+Button
+CollisionShape3D
+Camera3D
+MeshInstance3D
+Area3D
 Sprite2D
 CollisionShape2D
 Area2D

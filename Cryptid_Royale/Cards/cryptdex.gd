@@ -58,9 +58,13 @@ func _process(delta):
 			$ThisMenu/Window/ImgDescr/cryptidDescr.text = Database.DATA[keys[i][6]]
 			$ThisMenu/Window/ImgDescr/cryptidImg.texture = load(CardImg)
 			$ThisMenu.visible = true
-        """
+		"""
 
 		column+=1
 		if column > 5:
 			row+=1
 			column = 1
+
+
+func _on_button_pressed():
+	get_tree().change_scene_to_file("res://scenes/home/home.tscn")
