@@ -1,0 +1,5 @@
+res://Cards/CardBase.tscn
+res://scenes/menu/menu.tscn
+res://scenes/home/home.tscn
+res://Cards/cryptdex.tscn
+res://Cards/cryptdex.gd
