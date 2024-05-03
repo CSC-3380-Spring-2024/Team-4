@@ -1,0 +1,14 @@
+Node
+CollisionShape3D
+StaticBody3D
+Area3D
+ShapeCast3D
+CSGBox3D
+NavigationAgent3D
+MeshInstance3D
+CharacterBody3D
+Area2D
+NavigationObstacle3D
+GridMap
+Button
+WorldEnvironment

@@ -1,5 +1,3 @@
-res://Cards/CardBase.tscn
-res://scenes/menu/menu.tscn
-res://scenes/home/home.tscn
-res://Cards/cryptdex.tscn
-res://Cards/cryptdex.gd
+res://combatArea copy 7/board.tscn
+res://combatArea copy 7/cherry blossom forest level copy/GrassShader.tres
+res://combatArea copy 7/cherry blossom forest level copy/Stylized3DGrass.tres

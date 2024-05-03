@@ -1,0 +1,123 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1714754806
+board.tscn::PackedScene::7511824421398553115::1714754360::0::1::::<><>::uid://by4d07koladfn::::res://models/tongueMonster.tscn<>uid://f1huyy1ap0p3::::res://Characters/fishMonster/fishMonster.tscn<>uid://f5rvhbmug7dp::::res://Characters/goatMan/goatBro.tscn<>uid://c6ccg8bankij2::::res://Characters/fourleggedReptilemonster/fourleggedMonster.tscn<>uid://egpru16uvbme::::res://cherry blossom forest level copy/Stylized3DGrass.tres<>uid://dewcvpcnqpad1::::res://Characters/leechMan/leechMan.tscn<>uid://cps4i3mbo1rrm::::res://cherry blossom forest level copy/sakuraTree.tscn<>uid://c85v7nsfah248::::res://Characters/wendigo/wendigoodtoGo.tscn
+characterHandler.cs::CSharpScript::-1::1714754360::0::1::::<>Node<>::
+hitBox1.gd::GDScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+icon.svg::CompressedTexture2D::3744899735807145743::1714754360::1714754360::1::::<><>::
+::res://Characters/::1714754360
+::res://Characters/fishMonster/::1714754360
+fishMonster.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+fishMonster.tscn::PackedScene::405080073440828726::1714754360::0::1::::<><>::res://Characters/fishMonster/fishMonster.cs<>uid://ddaqohpcjmqct::::res://Characters/fishMonster/monster_monster_BaseColor.1001.png
+monster_monster_BaseColor.1001.png::CompressedTexture2D::7370825445931237639::1714754360::1714754360::1::::<><>::
+::res://Characters/fourleggedReptilemonster/::1714754360
+4leggedMonster.glb::PackedScene::2207761877777562644::1714754360::1714754360::1::::<><>::
+fourleggedMonster.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+fourleggedMonster.tscn::PackedScene::6952958159255422029::1714754360::0::1::::<><>::res://Characters/fourleggedReptilemonster/fourleggedMonster.cs<>uid://cco6f6gs2daby::::res://Characters/fourleggedReptilemonster/QlongaCorda_Head_BaseColor.tga.png<>uid://ivdfkvd5lwsg::::res://Characters/fourleggedReptilemonster/QlongaCorda_Body_BaseColor.tga.png<>uid://c0eliq3m8pwqk::::res://Characters/fourleggedReptilemonster/QlongaCorda_Limbs_BaseColor.tga.png
+QlongaCorda_Body_BaseColor.tga.png::CompressedTexture2D::605054319738587162::1714754360::1714754360::1::::<><>::
+QlongaCorda_Body_Normal.tga.png::CompressedTexture2D::5399450904665512658::1714754360::1714754360::1::::<><>::
+QlongaCorda_Head_BaseColor.tga.png::CompressedTexture2D::4944013137311106242::1714754360::1714754360::1::::<><>::
+QlongaCorda_Limbs_BaseColor.tga.png::CompressedTexture2D::6536503026842986762::1714754360::1714754360::1::::<><>::
+::res://Characters/goatMan/::1714754360
+defaultMat_Base_Color.png::CompressedTexture2D::4641979180789555087::1714754360::1714754360::1::::<><>::
+goatBro.tscn::PackedScene::413945611141468069::1714754360::0::1::::<><>::res://Characters/goatMan/goatMan.cs<>uid://b7euypb46aswl::::res://Characters/goatMan/defaultMat_Base_Color.png
+goatMan.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+goatMan.glb::PackedScene::4824614106206401287::1714754360::1714754360::1::::<><>::
+::res://Characters/hideBehind/::1714754360
+hideBehind.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+hideBehind.glb::PackedScene::7800682145160355522::1714754360::1714754360::1::::<><>::
+hideBehind.tscn::PackedScene::5267483506606067054::1714754360::0::1::::<><>::res://Characters/hideBehind/hideBehind.cs
+hideBehind_branch1Normal.png::CompressedTexture2D::7215042851881346524::1714754360::1714754360::1::::<><>::
+hideBehind_branch1Specular.png::CompressedTexture2D::8761224188055063471::1714754360::1714754360::1::::<><>::
+hideBehind_branch1Specular_6.png::CompressedTexture2D::2907761708676419243::1714754360::1714754360::1::::<><>::
+hideBehind_treemanColor.png::CompressedTexture2D::4993425756022671243::1714754360::1714754360::1::::<><>::
+hideBehind_treemanNormal.png::CompressedTexture2D::2997270034812706906::1714754360::1714754360::1::::<><>::
+hideBehind_treemanSpecular.png::CompressedTexture2D::7133784310389935599::1714754360::1714754360::1::::<><>::
+hideBehind_treemanSpecular_3.png::CompressedTexture2D::1014702599065608396::1714754360::1714754360::1::::<><>::
+::res://Characters/leechMan/::1714754360
+leechMan.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+leechMan.glb::PackedScene::3574879725543399242::1714754360::1714754360::1::::<><>::
+leechMan.tscn::PackedScene::7485593463430776088::1714754360::0::1::::<><>::res://Characters/leechMan/leechMan.cs<>uid://nt5lj2cxp244::::res://Characters/leechMan/leechMan_t0030_0.png
+leechMan_t0030_0.png::CompressedTexture2D::953519812679603403::1714754360::1714754360::1::::<><>::
+::res://Characters/scorpion/::1714754360
+scorpion2.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+scorpion.glb::PackedScene::3051528672423734416::1714754360::1714754360::1::::<><>::
+scorpionBro.tscn::PackedScene::5708339071098223102::1714754360::0::1::::<><>::res://Characters/scorpion/scorpion2.cs<>uid://brxvd6jsu1iii::::res://Characters/scorpion/scorpion_low_scorpion_Emission.png<>uid://c5itrqckply8t::::res://Characters/scorpion/scorpion_low_scorpion_Normal.png
+scorpion_low_scorpion_AlbedoTransparency.png::CompressedTexture2D::6273714440396835528::1714754360::1714754360::1::::<><>::
+scorpion_low_scorpion_Emission.png::CompressedTexture2D::3628393771085526856::1714754360::1714754360::1::::<><>::
+scorpion_low_scorpion_MetallicSmoothness.png::CompressedTexture2D::9026970085330540308::1714754360::1714754360::1::::<><>::
+scorpion_low_scorpion_Normal.png::CompressedTexture2D::6896206523856669533::1714754360::1714754360::1::::<><>::
+::res://Characters/wendigo/::1714754360
+body-cloth.tga.png::CompressedTexture2D::1800878813216261363::1714754360::1714754360::1::::<><>::
+OcclusionHead.tga.png::CompressedTexture2D::5971466481215699531::1714754360::1714754360::1::::<><>::
+SelectionArea.gd::GDScript::-1::1714754360::0::1::::<>Area3D<>::
+wendigoodtoGo.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+wendigoodtoGo.tscn::PackedScene::7152337453153632319::1714754360::0::1::::<><>::res://Characters/wendigo/wendigoodtoGo.cs<>uid://0wmhf34mq8eh::::res://Characters/wendigo/body-cloth.tga.png<>uid://crcvgewri3jt8::::res://Characters/wendigo/OcclusionHead.tga.png
+::res://cherry blossom forest level copy/::1714754360
+cherryBlossomForestbattle.tscn::PackedScene::2089424508351798022::1714754360::0::1::::<><>::uid://egpru16uvbme::::res://cherry blossom forest level copy/Stylized3DGrass.tres<>uid://cps4i3mbo1rrm::::res://cherry blossom forest level copy/sakuraTree.tscn<>uid://d2c8u15igeo2f::::res://cherry blossom forest level copy/japaneseemptyHouse.tscn<>uid://dt6bcnyrt46do::::res://cherry blossom forest level copy/sakurabundle.tscn<>res://characterHandler.cs<>uid://f1huyy1ap0p3::::res://Characters/fishMonster/fishMonster.tscn
+GrassShader.tres::VisualShader::7798467579928853405::1714754360::0::1::::<><>::
+japaneseemptyHouse.tscn::PackedScene::9060530373776600275::1714754360::0::1::::<><>::uid://bvofityr8ov7d::::res://levels/cherry blossom forest level/assets/lowpoly_japanese_old_house.glb
+lowpoly_japanese_old_house_0.png::CompressedTexture2D::2901637635411396066::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_1.png::CompressedTexture2D::4116380358901156750::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_2.png::CompressedTexture2D::2957653624671639324::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_3.png::CompressedTexture2D::9037089449678503933::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_4.png::CompressedTexture2D::5757265013631730861::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_5.png::CompressedTexture2D::5808775581489479676::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_6.png::CompressedTexture2D::4159795987181177861::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_7.png::CompressedTexture2D::54500299277336555::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_8.png::CompressedTexture2D::17279327472976678::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_9.png::CompressedTexture2D::336887809582421493::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_10.png::CompressedTexture2D::3682261306564723073::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_11.png::CompressedTexture2D::7592086857055494398::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_12.png::CompressedTexture2D::7718869077347630617::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_13.png::CompressedTexture2D::2162250500916082037::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_14.png::CompressedTexture2D::7016304812138431504::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_15.png::CompressedTexture2D::6960917981564185196::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_16.png::CompressedTexture2D::4855748725449470404::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_17.png::CompressedTexture2D::9176900242828705875::1714754360::1714754360::1::::<><>::
+sakurabundle.tscn::PackedScene::8556910799836173992::1714754360::0::1::::<><>::uid://b28ybw6xaib7r::::res://levels/cherry blossom forest level/assets/sakura_tree_01_-_low_poly_model.glb<>uid://deqt6lro7huka::::res://levels/cherry blossom forest level/sakura_tree_01_-_low_poly_model_0.png<>uid://ds75sbptmo80x::::res://levels/cherry blossom forest level/sakura_tree_01_-_low_poly_model_1.png
+sakuraTree.tscn::PackedScene::5864609389927873762::1714754360::0::1::::<><>::uid://b28ybw6xaib7r::::res://levels/cherry blossom forest level/assets/sakura_tree_01_-_low_poly_model.glb
+sakura_tree_01_-_low_poly_model_0.png::CompressedTexture2D::7474257056867687644::1714754360::1714754360::1::::<><>::
+sakura_tree_01_-_low_poly_model_1.png::CompressedTexture2D::8490575055342395709::1714754360::1714754360::1::::<><>::
+Stylized3DGrass.res::PackedScene::4036037542751844056::1714754360::0::1::::<><>::uid://egpru16uvbme::::res://levels/cherry blossom forest level/Stylized3DGrass.tres
+Stylized3DGrass.tres::ShaderMaterial::294083846532337896::1714754360::0::1::::<><>::uid://djdvvewfn86x2::::res://cherry blossom forest level copy/GrassShader.tres
+Stylized3DGrass.tscn::PackedScene::2643209973911253747::1714754360::0::1::::<><>::uid://egpru16uvbme::::res://levels/cherry blossom forest level/Stylized3DGrass.tres<>uid://bs7qtt3ft4ulm::::res://Characters/axolotlMonster/axolotlMonster.tscn<>uid://cps4i3mbo1rrm::::res://levels/cherry blossom forest level/sakuraTree.tscn<>uid://d2c8u15igeo2f::::res://levels/cherry blossom forest level/japaneseemptyHouse.tscn<>uid://dt6bcnyrt46do::::res://levels/cherry blossom forest level/sakurabundle.tscn
+::res://cherry blossom forest level copy/assets/::1714754360
+cherryBlossomTree.tscn::PackedScene::5086416994365916304::1714754360::0::1::::<><>::uid://h2u6ih2qld2o::::res://trees/japanese_cherry_tree.glb
+lowpoly_japanese_old_house.glb::PackedScene::3889606595799725111::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_0.png::CompressedTexture2D::5158878624707032101::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_1.png::CompressedTexture2D::1300037856631069310::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_2.png::CompressedTexture2D::5121545834957329981::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_3.png::CompressedTexture2D::3238873575763824188::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_4.png::CompressedTexture2D::4579796884212219944::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_5.png::CompressedTexture2D::4626725678255334331::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_6.png::CompressedTexture2D::1238426237357908734::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_7.png::CompressedTexture2D::5164531741538448645::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_8.png::CompressedTexture2D::596733579165972277::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_9.png::CompressedTexture2D::8737981132540458988::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_10.png::CompressedTexture2D::2175754876328247092::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_11.png::CompressedTexture2D::5408340294386955269::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_12.png::CompressedTexture2D::1149159541426920811::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_13.png::CompressedTexture2D::2919327215722404815::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_14.png::CompressedTexture2D::6964740845674552354::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_15.png::CompressedTexture2D::7821031667538811422::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_16.png::CompressedTexture2D::5810110290859245427::1714754360::1714754360::1::::<><>::
+lowpoly_japanese_old_house_17.png::CompressedTexture2D::7975206878633734584::1714754360::1714754360::1::::<><>::
+sakura_tree_01_-_low_poly_model.glb::PackedScene::4351104125872219573::1714754360::1714754360::1::::<><>::
+sakura_tree_01_-_low_poly_model_0.png::CompressedTexture2D::2715188520543448778::1714754360::1714754360::1::::<><>::
+sakura_tree_01_-_low_poly_model_1.png::CompressedTexture2D::7970229096753584795::1714754360::1714754360::1::::<><>::
+::res://cherry blossom forest level copy/assets/Godot-4-3D-Stylized-Grass-main/::1714754360
+LICENSE.md::TextFile::-1::1714754360::0::1::::<><>::
+README.md::TextFile::-1::1714754360::0::1::::<><>::
+::res://cherry blossom forest level copy/assets/Godot-4-3D-Stylized-Grass-main/images/::1714754360
+fragment-shader.png::CompressedTexture2D::8263434896227773378::1714754360::1714754360::1::::<><>::
+in-editor.jpg::CompressedTexture2D::7108197067707380525::1714754360::1714754360::1::::<><>::
+thumbnail.png::CompressedTexture2D::8414633274133291241::1714754360::1714754360::1::::<><>::
+vertex-shader.png::CompressedTexture2D::8941965880370648559::1714754360::1714754360::1::::<><>::
+::res://models/::1714754360
+body-cloth.tga.png::CompressedTexture2D::3528449208572916449::1714754360::1714754360::1::::<><>::
+OcclusionHead.tga.png::CompressedTexture2D::713507658552157094::1714754360::1714754360::1::::<><>::
+tongueMonster.cs::CSharpScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+tongueMonster.tscn::PackedScene::4131048378545581619::1714754360::0::1::::<><>::res://models/tongueMonster.cs<>uid://n6gshgtb5cpx::::res://models/tongueMonster_creature_Base_color.png
+tongueMonsterWithMovement.gd::GDScript::-1::1714754360::0::1::::<>CharacterBody3D<>::
+tongueMonster_creature_Base_color.png::CompressedTexture2D::976847501715229821::1714754360::1714754360::1::::<><>::
+tongueMonster_creature_Metallic.png::CompressedTexture2D::3742222671675715244::1714754360::1714754360::1::::<><>::

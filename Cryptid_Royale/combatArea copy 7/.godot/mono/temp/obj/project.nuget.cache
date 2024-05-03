@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ptN2NyxZA2Nequ7I/sAlXqg1l/V4kGrcyorgeyQzXEO2HMvoyxlF1MRcrYM5SRreV0IBLOAuK4wvv7369uHJXg==",
+  "success": true,
+  "projectFilePath": "/Users/cdbelala/Documents/combatArea copy 3/pathFinding.csproj",
+  "expectedPackageFiles": [
+    "/Users/cdbelala/.nuget/packages/godot.sourcegenerators/4.2.1/godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "/Users/cdbelala/.nuget/packages/godotsharp/4.2.1/godotsharp.4.2.1.nupkg.sha512",
+    "/Users/cdbelala/.nuget/packages/godotsharpeditor/4.2.1/godotsharpeditor.4.2.1.nupkg.sha512",
+    "/Users/cdbelala/.nuget/packages/microsoft.netcore.app.ref/6.0.27/microsoft.netcore.app.ref.6.0.27.nupkg.sha512",
+    "/Users/cdbelala/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.27/microsoft.aspnetcore.app.ref.6.0.27.nupkg.sha512"
+  ],
+  "logs": []
+}
