@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 res://models/tongueMonster/tongueMonster.tscn
@@ -9,6 +10,14 @@ res://player.tscn
 res://characterHandler.cs
 res://models/axolot/axMonster.cs
 res://models/fishMonster/fishMonster.cs
+=======
+res://Cards/cryptdex.tscn
+res://yetiMountain level/yetiMountain.tscn
+res://characterHandler.cs
+res://models/axolot/axMonster.cs
+res://models/fishMonster/fishMonster.cs
+res://models/fourleggedReptilemonster/fourleggedMonster.cs
+>>>>>>> bce5a00c6e72334443f88009f9fd0e954d28dd38
 res://models/goatMan/goatMan.cs
 res://models/hideBehind/hide_behind.cs
 res://models/kappa/kappaCryptid.cs
@@ -16,6 +25,7 @@ res://models/kellyHopkins/kelly_hopkins_monst.cs
 res://models/leechMan/leechMan.cs
 res://models/reptilianBro.cs
 res://models/scorpion/scorpion2.cs
+<<<<<<< HEAD
 res://models/tongueMonster/tongueMonster.cs
 res://models/wendigo/wendigoodtoGo.cs
 res://models/werewolf/wereWolfBro.cs
@@ -31,3 +41,14 @@ res://scenes/menu/menu.tscn
 res://scenes/home/home.tscn
 res://scenes/board.tscn
 >>>>>>> Stashed changes
+=======
+res://models/tongueMonster.cs
+res://models/wendigo/wendigoodtoGo.cs
+res://models/werewolf/wereWolfBro.cs
+res://scenes/home/home.tscn
+res://scenes/map/map_room.tscn
+res://scenes/map/map.gd
+res://scenes/map/map_room.gd
+res://scenes/map/map_generator.gd
+res://yetiMountainlevel/yetiMountain.tscn
+>>>>>>> bce5a00c6e72334443f88009f9fd0e954d28dd38
