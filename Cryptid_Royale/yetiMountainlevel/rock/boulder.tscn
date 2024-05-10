@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqstagges7f6f"]
+
+[ext_resource type="PackedScene" uid="uid://dywoieny6leb2" path="res://yetiMountainlevel/rock/rock.glb" id="1_8khji"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sjsoj"]
+size = Vector3(7, 5, 5)
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_8khji")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/untitled_obj_cleaner_materialmerger_gles/Object_2" index="0"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 6.43381e-16, 2.89753)
+shape = SubResource("BoxShape3D_sjsoj")
