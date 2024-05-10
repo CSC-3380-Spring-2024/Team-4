@@ -1,12 +1,14 @@
-[gd_scene load_steps=25 format=3 uid="uid://dfa1weii15h4v"]
+[gd_scene load_steps=28 format=3 uid="uid://dfa1weii15h4v"]
 
+[ext_resource type="Script" path="res://scenes/battleHandler.cs" id="1_ngy3k"]
+[ext_resource type="Script" path="res://scenes/characterHandler.cs" id="2_e632m"]
 [ext_resource type="PackedScene" uid="uid://by4d07koladfn" path="res://models/tongueMonster.tscn" id="2_knud4"]
 [ext_resource type="PackedScene" uid="uid://f1huyy1ap0p3" path="res://models/fishMonster/fishMonster.tscn" id="4_vpc4e"]
 [ext_resource type="PackedScene" uid="uid://f5rvhbmug7dp" path="res://models/goatMan/goatBro.tscn" id="5_i5p1t"]
 [ext_resource type="PackedScene" uid="uid://c6ccg8bankij2" path="res://models/fourleggedReptilemonster/fourleggedMonster.tscn" id="7_0mfh3"]
-[ext_resource type="Material" uid="uid://egpru16uvbme" path="res://combatArea copy 7/cherry blossom forest level copy/Stylized3DGrass.tres" id="7_1jwyh"]
+[ext_resource type="Material" uid="uid://egpru16uvbme" path="res://models/werewolf/cherry blossom forest level copy/Stylized3DGrass.tres" id="7_1jwyh"]
 [ext_resource type="PackedScene" uid="uid://dewcvpcnqpad1" path="res://models/leechMan/leechMan.tscn" id="7_qct5e"]
-[ext_resource type="PackedScene" uid="uid://cps4i3mbo1rrm" path="res://combatArea copy 7/cherry blossom forest level copy/sakuraTree.tscn" id="8_1of5v"]
+[ext_resource type="PackedScene" uid="uid://cps4i3mbo1rrm" path="res://models/werewolf/cherry blossom forest level copy/sakuraTree.tscn" id="8_1of5v"]
 [ext_resource type="PackedScene" uid="uid://c85v7nsfah248" path="res://models/wendigo/wendigoodtoGo.tscn" id="8_e55pe"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_lah1v"]
@@ -80,8 +82,11 @@ buffer = PackedFloat32Array(0, 0, -1.001, 3.44497, 0, 1.001, 0, -3.26222, 1.001,
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_k66wt"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_lxok1"]
+
 [node name="Board" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+script = ExtResource("1_ngy3k")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 transform = Transform3D(1.03289, -0.00813141, 0.00832173, 0.00841965, 1.00306, -0.0115512, -0.00582946, 0.00799439, 1.4578, -7, -5, 1)
@@ -98,12 +103,13 @@ transform = Transform3D(1, -3.70602e-08, 1.02436e-09, 3.70602e-08, 1, -6.90989e-
 shape = SubResource("BoxShape3D_vh1jr")
 
 [node name="Camera3D" type="Camera3D" parent="." groups=["Camera"]]
-transform = Transform3D(-0.999826, -0.0172991, -0.00698613, -0.0186565, 0.927081, 0.374396, -2.29805e-10, 0.374461, -0.927243, -2.55259, 12.7541, -39.6238)
+transform = Transform3D(-0.999826, -0.0172991, -0.00698614, -0.0177918, 0.771437, 0.636057, -0.00561384, 0.63607, -0.771611, -5.11531, 14.8927, -38.9485)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_v1r04")
 
 [node name="characterHandler" type="Node" parent="."]
+script = ExtResource("2_e632m")
 
 [node name="tongueMonster" parent="characterHandler" instance=ExtResource("2_knud4")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 16, 0.824, -31)
@@ -152,6 +158,7 @@ shape = SubResource("BoxShape3D_r03fp")
 
 [node name="4leggedMonster" parent="characterHandler" instance=ExtResource("7_0mfh3")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -8, -4, -30)
+lizardvelocity = null
 
 [node name="Area3D" type="Area3D" parent="characterHandler/4leggedMonster"]
 
@@ -159,59 +166,78 @@ transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -8, -4, -30)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.33333, 2)
 shape = SubResource("BoxShape3D_r03fp")
 
-[node name="obstacles & textures" type="Node" parent="."]
-
-[node name="GrassBase" type="MeshInstance3D" parent="obstacles & textures"]
-transform = Transform3D(0.48, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -5, -5, 4)
+[node name="GrassBase" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.48, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -8, -5, 4)
 mesh = SubResource("PlaneMesh_hdupl")
-skeleton = NodePath("../..")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="obstacles & textures/GrassBase"]
+[node name="StaticBody3D" type="StaticBody3D" parent="GrassBase"]
 transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 0, 0, 0)
 physics_material_override = SubResource("PhysicsMaterial_arqdk")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="obstacles & textures/GrassBase/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GrassBase/StaticBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 2)
 shape = SubResource("BoxShape3D_urit5")
 
-[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="obstacles & textures/GrassBase"]
+[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionBox3D" parent="GrassBase"]
 
-[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="obstacles & textures/GrassBase"]
+[node name="MultiMeshInstance3D" type="MultiMeshInstance3D" parent="GrassBase"]
 transform = Transform3D(2.496, 0, 0, 0, 1, 0, 0, 0, 3.4, 2.08333, 4, 0)
 material_override = ExtResource("7_1jwyh")
 cast_shadow = 2
 multimesh = SubResource("MultiMesh_8t1ig")
 
-[node name="sakura" parent="obstacles & textures" instance=ExtResource("8_1of5v")]
-transform = Transform3D(20, 0, 34.641, 0, 40, 0, -34.641, 0, 20, -3.3385, -3.82522, 3.4143)
+[node name="sakura" parent="." instance=ExtResource("8_1of5v")]
+transform = Transform3D(20, 0, 34.641, 0, 40, 0, -34.641, 0, 20, -6.3385, -3.82522, 3.4143)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="obstacles & textures/sakura"]
+[node name="StaticBody3D" type="StaticBody3D" parent="sakura"]
 transform = Transform3D(0.025, 0, 0, 0, 0.025, 0, 0, 0, 0.025, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="obstacles & textures/sakura/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sakura/StaticBody3D"]
 shape = SubResource("CapsuleShape3D_k66wt")
 
-[node name="sakura2" parent="obstacles & textures" instance=ExtResource("8_1of5v")]
-transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, -22.3385, -3.82522, 2.4143)
+[node name="sakura2" parent="." instance=ExtResource("8_1of5v")]
+transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, -25.3385, -3.82522, 2.4143)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="obstacles & textures/sakura2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="sakura2"]
 transform = Transform3D(0.025, 0, 0, 0, 0.025, 0, 0, 0, 0.025, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="obstacles & textures/sakura2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sakura2/StaticBody3D"]
 shape = SubResource("CapsuleShape3D_k66wt")
 
-[node name="sakura3" parent="obstacles & textures" instance=ExtResource("8_1of5v")]
-transform = Transform3D(10.3528, 0, -38.637, 0, 40, 0, 38.637, 0, 10.3528, 18.6615, -3.82522, 2.4143)
+[node name="sakura3" parent="." instance=ExtResource("8_1of5v")]
+transform = Transform3D(10.3528, 0, -38.637, 0, 40, 0, 38.637, 0, 10.3528, 15.6615, -3.82522, 2.4143)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="obstacles & textures/sakura3"]
+[node name="StaticBody3D" type="StaticBody3D" parent="sakura3"]
 transform = Transform3D(0.025, 0, 0, 0, 0.025, 0, 0, 0, 0.025, 0, 0, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="obstacles & textures/sakura3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="sakura3/StaticBody3D"]
 shape = SubResource("CapsuleShape3D_k66wt")
+
+[node name="worldBorders" type="Node" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="worldBorders"]
+transform = Transform3D(1, 0, 0, 0, 10.7741, 0, 0, 0, 73.4738, 23.7436, 0, 3.62222)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="worldBorders/StaticBody3D"]
+shape = SubResource("BoxShape3D_lxok1")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="worldBorders"]
+transform = Transform3D(1, 0, 0, 0, 10.7741, 0, 0, 0, 73.4738, -32.1658, 0, 3.62222)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="worldBorders/StaticBody3D2"]
+shape = SubResource("BoxShape3D_lxok1")
+
+[node name="StaticBody3D3" type="StaticBody3D" parent="worldBorders"]
+transform = Transform3D(-4.37114e-08, 3.75788e-15, 73.4738, 3.48787e-16, 10.7741, -2.56267e-14, -1, 3.75788e-15, -3.21164e-06, -0.417742, 0.401306, 41.5478)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="worldBorders/StaticBody3D3"]
+shape = SubResource("BoxShape3D_lxok1")
+
+[node name="StaticBody3D4" type="StaticBody3D" parent="worldBorders"]
+transform = Transform3D(-4.37114e-08, 3.75788e-15, 73.4738, 3.48787e-16, 10.7741, -2.56267e-14, -1, 3.75788e-15, -3.21164e-06, -0.417742, 0.401306, -35.4101)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="worldBorders/StaticBody3D4"]
+shape = SubResource("BoxShape3D_lxok1")
 
 [connection signal="area_entered" from="characterHandler/tongueMonster/Area3D" to="characterHandler/tongueMonster" method="isInHitBox"]
-[connection signal="area_entered" from="characterHandler/fishMonster/Area3D" to="characterHandler/fishMonster" method="isInHitBox"]
-[connection signal="area_entered" from="characterHandler/goatMan/Area3D" to="characterHandler/goatMan" method="isInHitBox"]
-[connection signal="area_entered" from="characterHandler/leechMan/Area3D" to="characterHandler/leechMan" method="isInHitBox"]
-[connection signal="area_entered" from="characterHandler/wendigoMonster/Area3D" to="characterHandler/wendigoMonster" method="isInHitBox"]
-[connection signal="area_entered" from="characterHandler/4leggedMonster/Area3D" to="characterHandler/4leggedMonster" method="isInHitBox"]
+[connection signal="area_exited" from="characterHandler/tongueMonster/Area3D" to="characterHandler/tongueMonster" method="isNotInHitBox"]

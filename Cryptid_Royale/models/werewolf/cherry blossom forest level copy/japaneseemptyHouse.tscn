@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2c8u15igeo2f"]
+
+[ext_resource type="PackedScene" uid="uid://bvofityr8ov7d" path="res://cherry blossom forest level copy/assets/lowpoly_japanese_old_house.glb" id="1_u8nwp"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_u8nwp")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="house_lp_roof_0" parent="Sketchfab_model/JapaneseOldHouse_fbx/RootNode/house_lp" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 3.83842e-15, 0, -3.83842e-15, 1, 0, 0, 0)
+
+[node name="house_lp_wall_0" parent="Sketchfab_model/JapaneseOldHouse_fbx/RootNode/house_lp" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 2.66821e-15, 0, -3.83842e-15, 1, 0, 0, 0)
+
+[node name="house_lp_woodparts_0" parent="Sketchfab_model/JapaneseOldHouse_fbx/RootNode/house_lp" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 2.66821e-15, 0, -3.83842e-15, 1, 0, 0, 0)

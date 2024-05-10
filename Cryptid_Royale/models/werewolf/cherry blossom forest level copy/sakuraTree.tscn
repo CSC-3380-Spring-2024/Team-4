@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cps4i3mbo1rrm"]
+
+[ext_resource type="PackedScene" uid="uid://b28ybw6xaib7r" path="res://cherry blossom forest level copy/assets/sakura_tree_01_-_low_poly_model.glb" id="1_dj1po"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_dj1po")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)

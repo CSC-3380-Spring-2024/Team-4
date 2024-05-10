@@ -1,13 +1,14 @@
+res://models/tongueMonster/tongueMonster.tscn
 res://scenes/menu/menu.tscn
+res://Player.gd
 res://scenes/home/home.tscn
 res://scenes/map/map.tscn
 res://player.tscn
 res://characterHandler.cs
 res://models/axolot/axMonster.cs
 res://models/fishMonster/fishMonster.cs
-res://models/fourleggedReptilemonster/fourleggedMonster.cs
 res://models/goatMan/goatMan.cs
-res://models/hideBehind/hideBehind.cs
+res://models/hideBehind/hide_behind.cs
 res://models/kappa/kappaCryptid.cs
 res://models/kellyHopkins/kelly_hopkins_monst.cs
 res://models/leechMan/leechMan.cs
@@ -16,3 +17,5 @@ res://models/scorpion/scorpion2.cs
 res://models/tongueMonster/tongueMonster.cs
 res://models/wendigo/wendigoodtoGo.cs
 res://models/werewolf/wereWolfBro.cs
+res://scenes/battleHandler.cs
+res://scenes/characterHandler.cs

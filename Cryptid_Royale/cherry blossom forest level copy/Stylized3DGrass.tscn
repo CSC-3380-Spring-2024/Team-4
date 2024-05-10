@@ -1,10 +1,10 @@
 [gd_scene load_steps=21 format=3 uid="uid://bdwnjudmmykh4"]
 
-[ext_resource type="Material" uid="uid://egpru16uvbme" path="res://levels/cherry blossom forest level/Stylized3DGrass.tres" id="1_mon8u"]
-[ext_resource type="PackedScene" uid="uid://bs7qtt3ft4ulm" path="res://Characters/axolotlMonster/axolotlMonster.tscn" id="3_ytkgq"]
-[ext_resource type="PackedScene" uid="uid://cps4i3mbo1rrm" path="res://levels/cherry blossom forest level/sakuraTree.tscn" id="4_nh7xq"]
-[ext_resource type="PackedScene" uid="uid://d2c8u15igeo2f" path="res://levels/cherry blossom forest level/japaneseemptyHouse.tscn" id="5_gks1a"]
-[ext_resource type="PackedScene" uid="uid://dt6bcnyrt46do" path="res://levels/cherry blossom forest level/sakurabundle.tscn" id="6_0m4xw"]
+[ext_resource type="Material" uid="uid://egpru16uvbme" path="res://cherry blossom forest level copy/Stylized3DGrass.tres" id="1_mon8u"]
+[ext_resource type="PackedScene" uid="uid://bs7qtt3ft4ulm" path="res://models/axolot/axolotlMonster.tscn" id="3_ytkgq"]
+[ext_resource type="PackedScene" uid="uid://cps4i3mbo1rrm" path="res://cherry blossom forest level copy/sakuraTree.tscn" id="4_nh7xq"]
+[ext_resource type="PackedScene" uid="uid://d2c8u15igeo2f" path="res://cherry blossom forest level copy/japaneseemptyHouse.tscn" id="5_gks1a"]
+[ext_resource type="PackedScene" uid="uid://dt6bcnyrt46do" path="res://cherry blossom forest level copy/sakurabundle.tscn" id="6_0m4xw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m1mqg"]
 diffuse_mode = 3

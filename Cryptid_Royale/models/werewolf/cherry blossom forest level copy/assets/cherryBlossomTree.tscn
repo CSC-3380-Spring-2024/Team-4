@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cep5sr0lt4uea"]
+
+[ext_resource type="PackedScene" uid="uid://h2u6ih2qld2o" path="res://trees/japanese_cherry_tree.glb" id="1_ysqgr"]
+
+[node name="Sketchfab_Scene" instance=ExtResource("1_ysqgr")]
+
+[node name="Object_5" parent="Sketchfab_model/root/GLTF_SceneRootNode/cherry_0" index="1"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)

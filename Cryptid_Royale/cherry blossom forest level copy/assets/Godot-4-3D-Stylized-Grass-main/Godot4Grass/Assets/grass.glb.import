@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dibcob5mpje7q"
-path="res://.godot/imported/grass.glb-f36eab380f15d8cf1c1394a68030a3f0.scn"
+path="res://.godot/imported/grass.glb-be77e75cd858d7e80470d52c7c14a62d.scn"
 
 [deps]
 
-source_file="res://cherry blossom forest level copy/assets/Godot-4-3D-Stylized-Grass-main/Godot4Grass/Assets/grass.glb"
-dest_files=["res://.godot/imported/grass.glb-f36eab380f15d8cf1c1394a68030a3f0.scn"]
+source_file="res://Assets/grass.glb"
+dest_files=["res://.godot/imported/grass.glb-be77e75cd858d7e80470d52c7c14a62d.scn"]
 
 [params]
 
@@ -22,7 +22,6 @@ meshes/generate_lods=true
 meshes/create_shadow_meshes=true
 meshes/light_baking=1
 meshes/lightmap_texel_size=0.2
-meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
@@ -30,5 +29,4 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 import_script/path=""
 _subresources={}
-gltf/naming_version=0
 gltf/embedded_image_handling=1

@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://d2c8u15igeo2f" path="res://cherry blossom forest level copy/japaneseemptyHouse.tscn" id="3_0mviu"]
 [ext_resource type="PackedScene" uid="uid://dt6bcnyrt46do" path="res://cherry blossom forest level copy/sakurabundle.tscn" id="4_jhbmw"]
 [ext_resource type="Script" path="res://characterHandler.cs" id="5_15l3y"]
-[ext_resource type="PackedScene" uid="uid://f1huyy1ap0p3" path="res://Characters/fishMonster/fishMonster.tscn" id="5_a2dbn"]
+[ext_resource type="PackedScene" uid="uid://f1huyy1ap0p3" path="res://models/fishMonster/fishMonster.tscn" id="5_a2dbn"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yr14d"]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://btk04i6i3jeka"
-path="res://.godot/imported/tongueMonster_creature_Metallic.png-2bc429091527c97167547abc6a87906d.ctex"
+path="res://.godot/imported/tongueMonster_creature_Metallic.png-11d272806a593cbe005fe5f1237a6ebc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/tongueMonster/tongueMonster_creature_Metallic.png"
-dest_files=["res://.godot/imported/tongueMonster_creature_Metallic.png-2bc429091527c97167547abc6a87906d.ctex"]
+source_file="res://combatArea copy 7/models/tongueMonster_creature_Metallic.png"
+dest_files=["res://.godot/imported/tongueMonster_creature_Metallic.png-11d272806a593cbe005fe5f1237a6ebc.ctex"]
 
 [params]
 

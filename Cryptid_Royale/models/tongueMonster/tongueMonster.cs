@@ -4,6 +4,7 @@ using playerHandler;
 
 public partial class tongueMonster : CharacterBody3D
 {
+	bool inHitRange = false;
 	string playerNum = "p1";
 	playerHandler.characterHandler handler = new characterHandler();
 	public const float tongueMonsterSpeed = 4.0f;
@@ -50,7 +51,7 @@ public partial class tongueMonster : CharacterBody3D
 			if (!IsOnFloor()){
 				tongueMonstervelocity.Y -= tongueMonstergravity * (float)delta;
 			}else{
-			if (Input.IsActionJustPressed("spaceAttack"))
+			if (Input.IsActionJustPressed("spaceAttack") && inHitRange == true)
 				punched = true;
 				tongueMonster_anim.Set("parameters/conditions/attack", punched);
 			}
@@ -75,8 +76,9 @@ public partial class tongueMonster : CharacterBody3D
 		}
 	}
 
-	public void _on_area_3D_area_entered(Area3D area){
+	public void isInHitBox(Area3D area){
 		GD.Print("Fight!!");
+		inHitRange = true;
 	}
 
 	

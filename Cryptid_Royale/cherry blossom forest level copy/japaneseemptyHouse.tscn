@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d2c8u15igeo2f"]
 
-[ext_resource type="PackedScene" uid="uid://bvofityr8ov7d" path="res://levels/cherry blossom forest level/assets/lowpoly_japanese_old_house.glb" id="1_u8nwp"]
+[ext_resource type="PackedScene" uid="uid://bvofityr8ov7d" path="res://cherry blossom forest level copy/assets/lowpoly_japanese_old_house.glb" id="1_u8nwp"]
 
 [node name="Sketchfab_Scene" instance=ExtResource("1_u8nwp")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)

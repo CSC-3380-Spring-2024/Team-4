@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed: float = 3
+var speed: float = 2.5
 var flag: bool  = false
 var flagb: bool = true
 @onready var animations = $AnimationPlayer

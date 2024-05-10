@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://dt6bcnyrt46do"]
 
-[ext_resource type="PackedScene" uid="uid://b28ybw6xaib7r" path="res://levels/cherry blossom forest level/assets/sakura_tree_01_-_low_poly_model.glb" id="1_38swn"]
-[ext_resource type="Texture2D" uid="uid://deqt6lro7huka" path="res://levels/cherry blossom forest level/sakura_tree_01_-_low_poly_model_0.png" id="2_xoss2"]
-[ext_resource type="Texture2D" uid="uid://ds75sbptmo80x" path="res://levels/cherry blossom forest level/sakura_tree_01_-_low_poly_model_1.png" id="3_nv705"]
+[ext_resource type="PackedScene" uid="uid://b28ybw6xaib7r" path="res://cherry blossom forest level copy/assets/sakura_tree_01_-_low_poly_model.glb" id="1_38swn"]
+[ext_resource type="Texture2D" uid="uid://deqt6lro7huka" path="res://cherry blossom forest level copy/sakura_tree_01_-_low_poly_model_0.png" id="2_xoss2"]
+[ext_resource type="Texture2D" uid="uid://ds75sbptmo80x" path="res://cherry blossom forest level copy/sakura_tree_01_-_low_poly_model_1.png" id="3_nv705"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0ffhk"]
 resource_name = "Bark001_2K_JPG_Mat"

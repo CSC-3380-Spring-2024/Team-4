@@ -1,82 +1,76 @@
 using Godot;
 using System;
 
-public partial class fourleggedMonster : CharacterBody3D
+public partial class fourLeggedMonster : CharacterBody3D
 {
-	bool inHitRange = false;
-
+	bool inHitRange;
 	public const float lizardSpeed = 4.0f;
-	public const float JumpVelocity = 3.5f;
+	//public const float JumpVelocity = 4.5f;
 	public const float lizardRotationVelocity = 3.5f;
 
-
-	public float lizardgravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
+	// Get the gravity from the project settings to be synced with RigidBody nodes.
+	public float lizardGravity = ProjectSettings.GetSetting("physics/3d/default_gravity").AsSingle();
+	
 	private AnimationTree lizard_anim;
 	private AnimationNodeStateMachinePlayback lizard_animPlayback;
-	
-	[Export] public Vector3 lizardvelocity;
+	[Export] public Vector3 lizardVelocity;
 	
 	public override void _Ready(){
 		lizard_anim = GetNode<AnimationTree>("AnimationTree");
 		lizard_animPlayback = (AnimationNodeStateMachinePlayback) lizard_anim.Get("parameters/playback");
 		lizard_anim.Active = true;
 	}
-
+	
 	public override void _PhysicsProcess(double delta)
 	{
-		lizardvelocity = Velocity;
+		lizardVelocity = Velocity;
 		bool punched = false;
 
-		// Add the gravity.
+		// Add the gravity
 		if (!IsOnFloor())
-			lizardvelocity.Y -= lizardgravity * (float)delta;
+			lizardVelocity.Y -= lizardGravity * (float)delta;
 		else{
-			
-			if (Input.IsActionJustPressed("spaceAttack"))
+			if (Input.IsActionJustPressed("spaceAttack")){
 				punched = true;
+			}
 			lizard_anim.Set("parameters/conditions/attack", punched);
 		}
 		if (lizard_animPlayback.GetCurrentNode() == "attack"){
-			lizardvelocity = Vector3.Zero;
-			Velocity = lizardvelocity;
+			lizardVelocity = Vector3.Zero;
+			Velocity = lizardVelocity;
 			return;
 		}
-
-		if(Input.IsActionPressed("selP4")){
-			// Add the gravity.
-			if (!IsOnFloor())
-				lizardvelocity.Y -= lizardgravity * (float)delta;
-			else{
-				if (Input.IsActionJustPressed("spaceAttack"))
-					punched = true;
-				lizard_anim.Set("parameters/conditions/attack", punched);
-			}
-			if (lizard_animPlayback.GetCurrentNode() == "attack"){
-				lizardvelocity = Vector3.Zero;
-				Velocity = lizardvelocity;
-				return;
-			}
+		//what its supposed to look like, but retrieving the variable from the parent class proved to be an issue that we could not solve
+		//if(currentPlayer == 6){
+		if(Input.IsActionPressed("selP6")){
+			
+			// Get the input direction and handle the movement/deceleration.
+			// As good practice, you should replace UI actions with custom gameplay actions.
+			
 			float turnStrength = Input.GetAxis("left", "right");
 			float moveStrength = Input.GetAxis("forward", "backwards");
-			
 			RotateY(-Mathf.DegToRad(turnStrength * lizardRotationVelocity));
 			Vector3 direction = (Transform.Basis * new Vector3(0, 0, moveStrength)).Normalized();
+			
 			if (direction != Vector3.Zero)
 			{
-				lizardvelocity.X = direction.X * lizardSpeed;
-				lizardvelocity.Z = direction.Z * lizardSpeed;
+				lizardVelocity.X = direction.X * lizardSpeed;
+				lizardVelocity.Z = direction.Z * lizardSpeed;
 			}
 			else
 			{
-				lizardvelocity.X = Mathf.MoveToward(Velocity.X, 0, lizardSpeed);
-				lizardvelocity.Z = Mathf.MoveToward(Velocity.Z, 0, lizardSpeed);
+				lizardVelocity.X = Mathf.MoveToward(Velocity.X, 0, lizardSpeed);
+				lizardVelocity.Z = Mathf.MoveToward(Velocity.Z, 0, lizardSpeed);
 			}
 
-			Velocity = lizardvelocity;
+			Velocity = lizardVelocity;
 			MoveAndSlide();
 		}
 	}
-	public void isInHitBox(Area3D area){
-		GD.Print("Fight!!");
+	public void isInHitBox(){
+		inHitRange = true;
+	}
+	public void isNotInHitBox(){
+		inHitRange = false;
 	}
 }
