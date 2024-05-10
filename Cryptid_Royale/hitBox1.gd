@@ -47,12 +47,4 @@ func _input(event):
 		print(result)
 
 func onEnter(area):
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 	print("success")
-=======
-	print("success")
->>>>>>> Stashed changes
-=======
-	print("success")
->>>>>>> Stashed changes

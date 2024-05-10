@@ -1,7 +1,2 @@
-<<<<<<< HEAD
-﻿62037
+﻿64197
 C:/Users/Ty/Downloads/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64/Godot_v4.2.1-stable_mono_win64.exe
-=======
-﻿54778
-/Applications/Godot_mono.app/Contents/MacOS/Godot
->>>>>>> bce5a00c6e72334443f88009f9fd0e954d28dd38

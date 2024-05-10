@@ -8,17 +8,8 @@ extends Control
 @onready var audio = $Audio;
 @onready var home = $Home;
 @onready var map = $Map; 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-@onready var credits = $Credits
-=======
 
 
->>>>>>> Stashed changes
-=======
-
-
->>>>>>> Stashed changes
 
 func _ready():
 	title.show();
@@ -27,19 +18,9 @@ func _ready():
 	options.hide();
 	audio.hide();
 	home.hide();
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-	credits.hide()
-=======
 	
 
 	
->>>>>>> Stashed changes
-=======
-	
-
-	
->>>>>>> Stashed changes
 
 #show one node and hide the other
 func show_and_hide(first, second):
@@ -91,24 +72,9 @@ func _on_sound_fx_value_changed(value):
 func _on_back_audio_pressed():
 	show_and_hide(options, audio);
 
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-# button to go to credits
-func _on_credits_pressed():
-	show_and_hide(credits, options)
 
-# button to go back to Options from credits
-func _on_back_pressed():
-	show_and_hide(options, credits)
 
-# button to close game
+
+
 func _on_quit_pressed():
-	get_tree().quit();
-=======
-
-
->>>>>>> Stashed changes
-=======
-
-
->>>>>>> Stashed changes
+	pass # Replace with function body.

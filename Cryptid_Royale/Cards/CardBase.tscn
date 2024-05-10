@@ -9,15 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://d142djlm5njuv" path="res://Cards/Borders/Border.png" id="6_qfx4p"]
 [ext_resource type="FontFile" uid="uid://dqmsq6m33sfcb" path="res://Cards/Borders/Jersey10-Regular.ttf" id="6_uybsl"]
 [ext_resource type="Texture2D" uid="uid://bpvwsuwe36jjy" path="res://Cards/Borders/StatsBack.png" id="9_luimk"]
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 [ext_resource type="Script" path="res://Cards/ExitButton.gd" id="10_xfxwe"]
-=======
-[ext_resource type="Script" path="res://ExitButton.gd" id="10_xfxwe"]
->>>>>>> Stashed changes
-=======
-[ext_resource type="Script" path="res://ExitButton.gd" id="10_xfxwe"]
->>>>>>> Stashed changes
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_qgqoc"]
 blend_mode = 3
