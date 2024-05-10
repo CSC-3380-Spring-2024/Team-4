@@ -1,6 +1,14 @@
 extends TextureButton
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 var Cardname = "Megalodon"
+=======
+var Cardname = "Bigfoot"
+>>>>>>> Stashed changes
+=======
+var Cardname = "Bigfoot"
+>>>>>>> Stashed changes
 
 @onready var CardDatabase = load("res://Cards/CardDatabase.gd")
 @onready var CardInfo = CardDatabase.DATA[CardDatabase.get(Cardname)]
@@ -42,4 +50,12 @@ func _ready():
 func _pressed():
 	print(Cardname + " has been pressed")
 	$StatMenu.visible = true
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	print($StatMenu.get_viewport().size)
+=======
+	print($StatMenu.get_viewport().size)
+>>>>>>> Stashed changes
+=======
+	print($StatMenu.get_viewport().size)
+>>>>>>> Stashed changes

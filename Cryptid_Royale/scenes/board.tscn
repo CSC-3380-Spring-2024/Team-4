@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=28 format=3 uid="uid://dfa1weii15h4v"]
 
 [ext_resource type="Script" path="res://scenes/battleHandler.cs" id="1_ngy3k"]
@@ -9,6 +11,21 @@
 [ext_resource type="Material" uid="uid://egpru16uvbme" path="res://models/werewolf/cherry blossom forest level copy/Stylized3DGrass.tres" id="7_1jwyh"]
 [ext_resource type="PackedScene" uid="uid://dewcvpcnqpad1" path="res://models/leechMan/leechMan.tscn" id="7_qct5e"]
 [ext_resource type="PackedScene" uid="uid://cps4i3mbo1rrm" path="res://models/werewolf/cherry blossom forest level copy/sakuraTree.tscn" id="8_1of5v"]
+=======
+=======
+>>>>>>> Stashed changes
+[gd_scene load_steps=16 format=3 uid="uid://dfa1weii15h4v"]
+
+[ext_resource type="Script" path="res://characterHandler.cs" id="1_vuuah"]
+[ext_resource type="PackedScene" uid="uid://by4d07koladfn" path="res://models/tongueMonster/tongueMonster.tscn" id="2_knud4"]
+[ext_resource type="PackedScene" uid="uid://f1huyy1ap0p3" path="res://models/fishMonster/fishMonster.tscn" id="4_vpc4e"]
+[ext_resource type="PackedScene" uid="uid://f5rvhbmug7dp" path="res://models/goatMan/goatBro.tscn" id="5_i5p1t"]
+[ext_resource type="PackedScene" uid="uid://c6ccg8bankij2" path="res://models/fourleggedReptilemonster/fourleggedMonster.tscn" id="7_0mfh3"]
+[ext_resource type="PackedScene" uid="uid://dewcvpcnqpad1" path="res://models/leechMan/leechMan.tscn" id="7_qct5e"]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 [ext_resource type="PackedScene" uid="uid://c85v7nsfah248" path="res://models/wendigo/wendigoodtoGo.tscn" id="8_e55pe"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_lah1v"]
@@ -28,6 +45,8 @@ sky_material = SubResource("ProceduralSkyMaterial_bhuk2")
 background_mode = 2
 sky = SubResource("Sky_ekut5")
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [sub_resource type="BoxShape3D" id="BoxShape3D_r03fp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5fu15"]
@@ -90,6 +109,21 @@ script = ExtResource("1_ngy3k")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 transform = Transform3D(1.03289, -0.00813141, 0.00832173, 0.00841965, 1.00306, -0.0115512, -0.00582946, 0.00799439, 1.4578, -7, -5, 1)
+=======
+=======
+>>>>>>> Stashed changes
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ypiub"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_g0ogd"]
+
+[node name="Board" type="Node3D"]
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(1.03289, -0.00813141, 0.00832173, 0.00841965, 1.00306, -0.0115512, -0.00582946, 0.00799439, 1.4578, -3.57171, -3.05304, -0.261609)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 navigation_mesh = SubResource("NavigationMesh_lah1v")
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="NavigationRegion3D"]
@@ -103,13 +137,29 @@ transform = Transform3D(1, -3.70602e-08, 1.02436e-09, 3.70602e-08, 1, -6.90989e-
 shape = SubResource("BoxShape3D_vh1jr")
 
 [node name="Camera3D" type="Camera3D" parent="." groups=["Camera"]]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(-0.999826, -0.0172991, -0.00698614, -0.0177918, 0.771437, 0.636057, -0.00561384, 0.63607, -0.771611, -5.11531, 14.8927, -38.9485)
+=======
+transform = Transform3D(-0.999826, -0.0172991, -0.00698613, -0.0186565, 0.927081, 0.374396, -2.29805e-10, 0.374461, -0.927243, -2.55259, 12.7541, -39.6238)
+>>>>>>> Stashed changes
+=======
+transform = Transform3D(-0.999826, -0.0172991, -0.00698613, -0.0186565, 0.927081, 0.374396, -2.29805e-10, 0.374461, -0.927243, -2.55259, 12.7541, -39.6238)
+>>>>>>> Stashed changes
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_v1r04")
 
 [node name="characterHandler" type="Node" parent="."]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 script = ExtResource("2_e632m")
+=======
+script = ExtResource("1_vuuah")
+>>>>>>> Stashed changes
+=======
+script = ExtResource("1_vuuah")
+>>>>>>> Stashed changes
 
 [node name="tongueMonster" parent="characterHandler" instance=ExtResource("2_knud4")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 16, 0.824, -31)
@@ -117,52 +167,120 @@ transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 16, 0.824, -31)
 [node name="Area3D" type="Area3D" parent="characterHandler/tongueMonster"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="characterHandler/tongueMonster/Area3D"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0.6)
 shape = SubResource("BoxShape3D_r03fp")
 
 [node name="fishMonster" parent="characterHandler" instance=ExtResource("4_vpc4e")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7, -2.63909, -31)
+=======
+=======
+>>>>>>> Stashed changes
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_ypiub")
+
+[node name="fishMonster" parent="characterHandler" instance=ExtResource("4_vpc4e")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 7, 0.360908, -31)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [node name="Area3D" type="Area3D" parent="characterHandler/fishMonster"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="characterHandler/fishMonster/Area3D"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.666667)
 shape = SubResource("BoxShape3D_r03fp")
 
 [node name="goatMan" parent="characterHandler" instance=ExtResource("5_i5p1t")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, -4, -31)
+=======
+=======
+>>>>>>> Stashed changes
+shape = SubResource("CapsuleShape3D_g0ogd")
+
+[node name="goatMan" parent="characterHandler" instance=ExtResource("5_i5p1t")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, -31)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [node name="Area3D" type="Area3D" parent="characterHandler/goatMan"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="characterHandler/goatMan/Area3D"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.666667)
 shape = SubResource("BoxShape3D_r03fp")
 
 [node name="leechMan" parent="characterHandler" instance=ExtResource("7_qct5e")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -17, -4, -30)
+=======
+=======
+>>>>>>> Stashed changes
+shape = SubResource("CapsuleShape3D_g0ogd")
+
+[node name="leechMan" parent="characterHandler" instance=ExtResource("7_qct5e")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -17, 0, -30)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [node name="Area3D" type="Area3D" parent="characterHandler/leechMan"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="characterHandler/leechMan/Area3D"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.666667, 0.666666)
 shape = SubResource("BoxShape3D_r03fp")
 
 [node name="wendigoMonster" parent="characterHandler" instance=ExtResource("8_e55pe")]
 transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -25, -4, -30)
+=======
+=======
+>>>>>>> Stashed changes
+shape = SubResource("CapsuleShape3D_g0ogd")
+
+[node name="wendigoMonster" parent="characterHandler" instance=ExtResource("8_e55pe")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -25, 0, -30)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [node name="Area3D" type="Area3D" parent="characterHandler/wendigoMonster"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="characterHandler/wendigoMonster/Area3D"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.666666)
 shape = SubResource("BoxShape3D_r03fp")
 
 [node name="4leggedMonster" parent="characterHandler" instance=ExtResource("7_0mfh3")]
 transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -8, -4, -30)
 lizardvelocity = null
+=======
+=======
+>>>>>>> Stashed changes
+shape = SubResource("CapsuleShape3D_g0ogd")
+
+[node name="4leggedMonster" parent="characterHandler" instance=ExtResource("7_0mfh3")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -8, 0, -30)
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [node name="Area3D" type="Area3D" parent="characterHandler/4leggedMonster"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="characterHandler/4leggedMonster/Area3D"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.33333, 2)
 shape = SubResource("BoxShape3D_r03fp")
 
@@ -241,3 +359,13 @@ shape = SubResource("BoxShape3D_lxok1")
 
 [connection signal="area_entered" from="characterHandler/tongueMonster/Area3D" to="characterHandler/tongueMonster" method="isInHitBox"]
 [connection signal="area_exited" from="characterHandler/tongueMonster/Area3D" to="characterHandler/tongueMonster" method="isNotInHitBox"]
+=======
+shape = SubResource("CapsuleShape3D_g0ogd")
+
+[connection signal="area_entered" from="characterHandler/tongueMonster/Area3D" to="characterHandler/tongueMonster" method="_on_area_3d_area_entered"]
+>>>>>>> Stashed changes
+=======
+shape = SubResource("CapsuleShape3D_g0ogd")
+
+[connection signal="area_entered" from="characterHandler/tongueMonster/Area3D" to="characterHandler/tongueMonster" method="_on_area_3d_area_entered"]
+>>>>>>> Stashed changes

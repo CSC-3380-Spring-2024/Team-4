@@ -51,7 +51,13 @@ func _on_input_event(viewport: Node, event: InputEventMouseButton, shape_idx: in
 	
 	room.selected = true
 	animation_player.play("select")
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 	get_tree().change_scene_to_file("res://yetiMountainlevel/yetiMountain.tscn");
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 
 # Called by AnimationPlayer when the "select" animation finishes

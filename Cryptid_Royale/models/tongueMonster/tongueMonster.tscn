@@ -1,7 +1,19 @@
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=25 format=3 uid="uid://by4d07koladfn"]
 
 [ext_resource type="Script" path="res://models/tongueMonster.cs" id="1_hhvlq"]
 [ext_resource type="Texture2D" uid="uid://n6gshgtb5cpx" path="res://models/tongueMonster_creature_Base_color.png" id="2_jdcwl"]
+=======
+[gd_scene load_steps=24 format=3 uid="uid://by4d07koladfn"]
+
+[ext_resource type="Script" path="res://models/tongueMonster/tongueMonster.cs" id="1_hhvlq"]
+>>>>>>> Stashed changes
+=======
+[gd_scene load_steps=24 format=3 uid="uid://by4d07koladfn"]
+
+[ext_resource type="Script" path="res://models/tongueMonster/tongueMonster.cs" id="1_hhvlq"]
+>>>>>>> Stashed changes
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ifig4"]
 resource_name = "Material.001"
@@ -9,7 +21,13 @@ cull_mode = 2
 albedo_color = Color(0, 0, 0, 1)
 metallic = 1.0
 emission_enabled = true
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 emission_texture = ExtResource("2_jdcwl")
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_kjl17"]
 resource_name = "tongueMonster_bodymesh"
@@ -1169,7 +1187,15 @@ transitions = ["Start", "tongueMonsterIdle", SubResource("AnimationNodeStateMach
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ekpi5"]
 
 [node name="tongueMonster" type="CharacterBody3D"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 0.824223, 0)
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.824223, 0)
+>>>>>>> Stashed changes
+=======
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.824223, 0)
+>>>>>>> Stashed changes
 script = ExtResource("1_hhvlq")
 
 [node name="Armature" type="Node3D" parent="."]
@@ -1180,43 +1206,93 @@ bones/0/name = "mixamorig_Hips"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, -41.5917, 129.293)
 bones/0/enabled = true
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/0/position = Vector3(23.7092, 17.9792, -655.185)
 bones/0/rotation = Quaternion(-0.638699, -0.0953617, 0.0812603, 0.759188)
+=======
+bones/0/position = Vector3(17.4518, 13.7689, -655.645)
+bones/0/rotation = Quaternion(-0.638749, -0.092259, 0.079389, 0.759727)
+>>>>>>> Stashed changes
+=======
+bones/0/position = Vector3(17.4518, 13.7689, -655.645)
+bones/0/rotation = Quaternion(-0.638749, -0.092259, 0.079389, 0.759727)
+>>>>>>> Stashed changes
 bones/0/scale = Vector3(1, 1, 1)
 bones/1/name = "mixamorig_Spine"
 bones/1/parent = 0
 bones/1/rest = Transform3D(1, 0, 0, 0, 0.99822, 0.059642, 0, -0.059642, 0.99822, 0, 78.0997, -4.66633)
 bones/1/enabled = true
 bones/1/position = Vector3(3.63588e-06, 78.0997, -4.66633)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/1/rotation = Quaternion(0.0495099, -0.0162212, 0.0099608, 0.998592)
+=======
+bones/1/rotation = Quaternion(0.0490583, -0.016481, 0.00933137, 0.998616)
+>>>>>>> Stashed changes
+=======
+bones/1/rotation = Quaternion(0.0490583, -0.016481, 0.00933137, 0.998616)
+>>>>>>> Stashed changes
 bones/1/scale = Vector3(1, 1, 1)
 bones/2/name = "mixamorig_Spine1"
 bones/2/parent = 1
 bones/2/rest = Transform3D(1, 0, 0, 0, 1, 2.98023e-08, 0, -2.98023e-08, 1, 0, 91.2788, -1.43051e-06)
 bones/2/enabled = true
 bones/2/position = Vector3(4.76837e-06, 91.2788, 3.24845e-05)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/2/rotation = Quaternion(0.146769, -0.0320565, 0.0042348, 0.988642)
+=======
+bones/2/rotation = Quaternion(0.145331, -0.0323832, 0.00420873, 0.988844)
+>>>>>>> Stashed changes
+=======
+bones/2/rotation = Quaternion(0.145331, -0.0323832, 0.00420873, 0.988844)
+>>>>>>> Stashed changes
 bones/2/scale = Vector3(1, 1, 1)
 bones/3/name = "mixamorig_Spine2"
 bones/3/parent = 2
 bones/3/rest = Transform3D(1, 0, 0, 0, 1, -1.11759e-07, 0, 1.11759e-07, 1, 0, 104.319, -4.76837e-06)
 bones/3/enabled = true
 bones/3/position = Vector3(-1.90735e-05, 104.319, -6.07967e-05)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/3/rotation = Quaternion(0.146855, -0.0317429, 0.00362462, 0.988642)
+=======
+bones/3/rotation = Quaternion(0.145414, -0.03209, 0.00359144, 0.988844)
+>>>>>>> Stashed changes
+=======
+bones/3/rotation = Quaternion(0.145414, -0.03209, 0.00359144, 0.988844)
+>>>>>>> Stashed changes
 bones/3/scale = Vector3(1, 1, 1)
 bones/4/name = "mixamorig_Neck"
 bones/4/parent = 3
 bones/4/rest = Transform3D(1, 0, 0, 0, 0.99822, -0.0596419, 0, 0.0596419, 0.99822, 0, 117.358, 8.58307e-06)
 bones/4/enabled = true
 bones/4/position = Vector3(1.14441e-05, 117.358, 2.69645e-05)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/4/rotation = Quaternion(-0.0110886, 0.0635051, -0.0355558, 0.997286)
+=======
+bones/4/rotation = Quaternion(-0.00704894, 0.0679246, -0.0358131, 0.997023)
+>>>>>>> Stashed changes
+=======
+bones/4/rotation = Quaternion(-0.00704894, 0.0679246, -0.0358131, 0.997023)
+>>>>>>> Stashed changes
 bones/4/scale = Vector3(1, 1, 1)
 bones/5/name = "mixamorig_Head"
 bones/5/parent = 4
 bones/5/rest = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 55.6988, 52.3626)
 bones/5/enabled = true
 bones/5/position = Vector3(-1.90735e-05, 55.6986, 52.3626)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/5/rotation = Quaternion(-0.259468, 0.286519, -0.114607, 0.915122)
+=======
+bones/5/rotation = Quaternion(-0.250696, 0.310508, -0.129079, 0.907786)
+>>>>>>> Stashed changes
+=======
+bones/5/rotation = Quaternion(-0.250696, 0.310508, -0.129079, 0.907786)
+>>>>>>> Stashed changes
 bones/5/scale = Vector3(1, 1, 1)
 bones/6/name = "mixamorig_HeadTop_End"
 bones/6/parent = 5
@@ -1230,21 +1306,45 @@ bones/7/parent = 3
 bones/7/rest = Transform3D(-0.0369623, 0.861463, -0.506473, -0.000386476, -0.506832, -0.862045, -0.999317, -0.0316674, 0.0190666, 38.8978, 93.7549, -1.47502)
 bones/7/enabled = true
 bones/7/position = Vector3(38.8978, 93.7548, -1.47499)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/7/rotation = Quaternion(-0.615063, -0.314481, 0.668732, -0.274949)
+=======
+bones/7/rotation = Quaternion(-0.615512, -0.313942, 0.668775, -0.274456)
+>>>>>>> Stashed changes
+=======
+bones/7/rotation = Quaternion(-0.615512, -0.313942, 0.668775, -0.274456)
+>>>>>>> Stashed changes
 bones/7/scale = Vector3(1, 1, 1)
 bones/8/name = "mixamorig_LeftArm"
 bones/8/parent = 7
 bones/8/rest = Transform3D(0.99925, -0.0175147, 0.034534, -2.04891e-08, 0.891853, 0.452325, -0.0387216, -0.451986, 0.891184, 5.24521e-06, 93.5025, 3.62396e-05)
 bones/8/enabled = true
 bones/8/position = Vector3(1.11257e-05, 93.5025, -1.87815e-05)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/8/rotation = Quaternion(0.106014, 0.0565389, 0.340783, 0.932433)
+=======
+bones/8/rotation = Quaternion(0.116387, 0.0655047, 0.334045, 0.933047)
+>>>>>>> Stashed changes
+=======
+bones/8/rotation = Quaternion(0.116387, 0.0655047, 0.334045, 0.933047)
+>>>>>>> Stashed changes
 bones/8/scale = Vector3(1, 1, 1)
 bones/9/name = "mixamorig_LeftForeArm"
 bones/9/parent = 8
 bones/9/rest = Transform3D(0.854153, -0.460186, -0.242179, 0.474306, 0.88036, 7.82311e-08, 0.213204, -0.114867, 0.970232, 2.86102e-06, 206.157, -2.25306e-05)
 bones/9/enabled = true
 bones/9/position = Vector3(-5.09881e-05, 206.157, -8.67832e-06)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/9/rotation = Quaternion(0.0804607, -0.102667, 0.534185, 0.835244)
+=======
+bones/9/rotation = Quaternion(0.0806487, -0.102568, 0.535433, 0.834438)
+>>>>>>> Stashed changes
+=======
+bones/9/rotation = Quaternion(0.0806487, -0.102568, 0.535433, 0.834438)
+>>>>>>> Stashed changes
 bones/9/scale = Vector3(1, 1, 1)
 bones/10/name = "mixamorig_LeftHand"
 bones/10/parent = 9
@@ -1258,21 +1358,45 @@ bones/11/parent = 3
 bones/11/rest = Transform3D(-0.0337419, -0.861463, 0.506698, 0.000349134, -0.506996, -0.861948, 0.99943, -0.0289068, 0.0174078, -38.8978, 93.7471, -1.34598)
 bones/11/enabled = true
 bones/11/position = Vector3(-38.8978, 93.7471, -1.34596)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/11/rotation = Quaternion(0.668176, -0.29484, 0.620231, 0.286222)
+=======
+bones/11/rotation = Quaternion(0.66942, -0.29398, 0.620044, 0.284602)
+>>>>>>> Stashed changes
+=======
+bones/11/rotation = Quaternion(0.66942, -0.29398, 0.620044, 0.284602)
+>>>>>>> Stashed changes
 bones/11/scale = Vector3(0.999999, 1, 1)
 bones/12/name = "mixamorig_RightArm"
 bones/12/parent = 11
 bones/12/rest = Transform3D(0.999647, 0.0120167, -0.0236828, -4.61005e-08, 0.891773, 0.452484, 0.026557, -0.452324, 0.891458, 6.19888e-06, 93.5025, 1.00136e-05)
 bones/12/enabled = true
 bones/12/position = Vector3(6.6833e-05, 93.5026, -5.02606e-05)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/12/rotation = Quaternion(0.252849, -0.000951258, -0.336638, 0.907051)
+=======
+bones/12/rotation = Quaternion(0.257884, 0.00811554, -0.339068, 0.904689)
+>>>>>>> Stashed changes
+=======
+bones/12/rotation = Quaternion(0.257884, 0.00811554, -0.339068, 0.904689)
+>>>>>>> Stashed changes
 bones/12/scale = Vector3(1, 1, 1)
 bones/13/name = "mixamorig_RightForeArm"
 bones/13/parent = 12
 bones/13/rest = Transform3D(0.85711, 0.459028, 0.233785, -0.472111, 0.881539, 4.47035e-08, -0.206091, -0.110373, 0.972288, 1.14441e-05, 206.165, -2.6226e-05)
 bones/13/enabled = true
 bones/13/position = Vector3(-4.80406e-05, 206.165, -6.26893e-06)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/13/rotation = Quaternion(0.103559, 0.0876255, -0.659641, 0.739237)
+=======
+bones/13/rotation = Quaternion(0.103541, 0.0876375, -0.659529, 0.739338)
+>>>>>>> Stashed changes
+=======
+bones/13/rotation = Quaternion(0.103541, 0.0876375, -0.659529, 0.739338)
+>>>>>>> Stashed changes
 bones/13/scale = Vector3(1, 1, 1)
 bones/14/name = "mixamorig_RightHand"
 bones/14/parent = 13
@@ -1286,28 +1410,60 @@ bones/15/parent = 0
 bones/15/rest = Transform3D(-0.999999, -0.00150182, -2.09319e-07, 0.00148896, -0.991451, 0.130465, -0.000196145, 0.130467, 0.991439, 63.0158, -43.2869, -3.07347)
 bones/15/enabled = true
 bones/15/position = Vector3(63.0158, -43.2869, -3.07348)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/15/rotation = Quaternion(0.107797, 0.436055, 0.882945, -0.136541)
+=======
+bones/15/rotation = Quaternion(0.107733, 0.436206, 0.882552, -0.138634)
+>>>>>>> Stashed changes
+=======
+bones/15/rotation = Quaternion(0.107733, 0.436206, 0.882552, -0.138634)
+>>>>>>> Stashed changes
 bones/15/scale = Vector3(1, 1, 0.999986)
 bones/16/name = "mixamorig_LeftLeg"
 bones/16/parent = 15
 bones/16/rest = Transform3D(0.999999, -0.00157533, -0.000279372, 0.00159991, 0.984659, 0.174479, 2.23197e-07, -0.17448, 0.984661, -9.19244e-07, 357.497, -1.28362e-05)
 bones/16/enabled = true
 bones/16/position = Vector3(-6.49159e-06, 357.497, 3.97386e-05)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/16/rotation = Quaternion(-0.511714, -0.0221075, 0.0288318, 0.858387)
+=======
+bones/16/rotation = Quaternion(-0.504901, -0.0181876, 0.027907, 0.862534)
+>>>>>>> Stashed changes
+=======
+bones/16/rotation = Quaternion(-0.504901, -0.0181876, 0.027907, 0.862534)
+>>>>>>> Stashed changes
 bones/16/scale = Vector3(1, 1, 1)
 bones/17/name = "mixamorig_LeftFoot"
 bones/17/parent = 16
 bones/17/rest = Transform3D(0.996792, 0.07696, 0.0219975, 2.79397e-07, 0.274821, -0.961495, -0.0800421, 0.95841, 0.273939, 1.46312e-06, 339.883, 3.82238e-06)
 bones/17/enabled = true
 bones/17/position = Vector3(-1.05925e-05, 339.883, -1.22972e-05)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/17/rotation = Quaternion(0.695086, -0.0356566, -0.0982264, 0.711292)
+=======
+bones/17/rotation = Quaternion(0.689327, -0.0369051, -0.101047, 0.716419)
+>>>>>>> Stashed changes
+=======
+bones/17/rotation = Quaternion(0.689327, -0.0369051, -0.101047, 0.716419)
+>>>>>>> Stashed changes
 bones/17/scale = Vector3(1, 1, 1)
 bones/18/name = "mixamorig_LeftToeBase"
 bones/18/parent = 17
 bones/18/rest = Transform3D(0.999859, -0.0160233, 0.00505874, 0.0168029, 0.953467, -0.30103, 1.47149e-07, 0.301072, 0.953601, -1.28746e-05, 118.11, -0.000117064)
 bones/18/enabled = true
 bones/18/position = Vector3(1.55561e-05, 118.11, -2.9479e-06)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/18/rotation = Quaternion(0.160448, 0.00186721, 0.00839752, 0.987007)
+=======
+bones/18/rotation = Quaternion(0.160453, 0.00186756, 0.00839766, 0.987006)
+>>>>>>> Stashed changes
+=======
+bones/18/rotation = Quaternion(0.160453, 0.00186756, 0.00839766, 0.987006)
+>>>>>>> Stashed changes
 bones/18/scale = Vector3(1, 1, 1)
 bones/19/name = "mixamorig_LeftToe_End"
 bones/19/parent = 18
@@ -1321,21 +1477,45 @@ bones/20/parent = 0
 bones/20/rest = Transform3D(-0.999999, 0.00150138, 7.63974e-09, -0.00148813, -0.991175, 0.13255, 0.000199016, 0.13255, 0.991174, -63.0158, -43.2869, -4.38635)
 bones/20/enabled = true
 bones/20/position = Vector3(-63.0158, -43.2869, -4.38635)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/20/rotation = Quaternion(-0.153975, 0.364902, 0.905755, 0.150819)
+=======
+bones/20/rotation = Quaternion(-0.154218, 0.367458, 0.905022, 0.148749)
+>>>>>>> Stashed changes
+=======
+bones/20/rotation = Quaternion(-0.154218, 0.367458, 0.905022, 0.148749)
+>>>>>>> Stashed changes
 bones/20/scale = Vector3(1, 1, 0.999998)
 bones/21/name = "mixamorig_RightLeg"
 bones/21/parent = 20
 bones/21/rest = Transform3D(0.999999, 0.00157337, 0.000288356, -0.00159958, 0.9836, 0.180353, 1.34663e-07, -0.180353, 0.983602, -3.84852e-06, 357.596, 3.18743e-06)
 bones/21/enabled = true
 bones/21/position = Vector3(3.42375e-05, 357.596, -8.2586e-06)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/21/rotation = Quaternion(-0.492978, 0.0231004, -0.020065, 0.869504)
+=======
+bones/21/rotation = Quaternion(-0.49729, 0.027624, -0.0188744, 0.866939)
+>>>>>>> Stashed changes
+=======
+bones/21/rotation = Quaternion(-0.49729, 0.027624, -0.0188744, 0.866939)
+>>>>>>> Stashed changes
 bones/21/scale = Vector3(1, 1, 1)
 bones/22/name = "mixamorig_RightFoot"
 bones/22/parent = 21
 bones/22/rest = Transform3D(0.996934, -0.0754568, -0.0207222, 2.98023e-08, 0.264818, -0.964298, 0.0782505, 0.961341, 0.264007, -2.57623e-06, 339.944, 2.22811e-05)
 bones/22/enabled = true
 bones/22/position = Vector3(8.24254e-06, 339.944, 2.21711e-06)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 bones/22/rotation = Quaternion(0.714725, 0.057209, 0.13832, 0.683201)
+=======
+bones/22/rotation = Quaternion(0.717327, 0.0539714, 0.133998, 0.681597)
+>>>>>>> Stashed changes
+=======
+bones/22/rotation = Quaternion(0.717327, 0.0539714, 0.133998, 0.681597)
+>>>>>>> Stashed changes
 bones/22/scale = Vector3(1, 1, 1)
 bones/23/name = "mixamorig_RightToeBase"
 bones/23/parent = 22
@@ -1379,8 +1559,22 @@ advance_expression_base_node = NodePath("..")
 anim_player = NodePath("../AnimationPlayer")
 parameters/conditions/attack = false
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, -3.48787e-16, 3.48787e-16, 3.48787e-16, 1, -3.48787e-16, -3.48787e-16, 3.48787e-16, 1, 0, 0, 0)
 shape = SubResource("CapsuleShape3D_ekpi5")
+=======
+=======
+>>>>>>> Stashed changes
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+visible = false
+shape = SubResource("CapsuleShape3D_ekpi5")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes

@@ -13,7 +13,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Crypt-Menu")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e34e1643bffa58d529245d8f0075be2ed69c3269")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb4fadaf0b7d6f19dfa935bb3310bbc1269ce696")]
+>>>>>>> Stashed changes
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb4fadaf0b7d6f19dfa935bb3310bbc1269ce696")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("Crypt-Menu")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Crypt-Menu")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

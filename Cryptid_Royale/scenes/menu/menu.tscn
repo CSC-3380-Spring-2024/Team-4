@@ -222,6 +222,8 @@ grow_vertical = 2
 scale = Vector2(0.991948, 1)
 text = "Press to start"
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="Quit" type="Button" parent="Title-Screne"]
 layout_mode = 0
 offset_left = 224.0
@@ -233,6 +235,12 @@ text = "Exit"
 
 [node name="Main-Menu" type="Control" parent="."]
 visible = false
+=======
+[node name="Main-Menu" type="Control" parent="."]
+>>>>>>> Stashed changes
+=======
+[node name="Main-Menu" type="Control" parent="."]
+>>>>>>> Stashed changes
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -317,6 +325,14 @@ text = "Back"
 flat = true
 
 [node name="Audio" type="Control" parent="."]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+visible = false
+>>>>>>> Stashed changes
+=======
+visible = false
+>>>>>>> Stashed changes
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -371,10 +387,18 @@ self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
 material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 max_value = 50.0
 step = 0.0
 allow_greater = true
 allow_lesser = true
+=======
+value = 1.0
+>>>>>>> Stashed changes
+=======
+value = 1.0
+>>>>>>> Stashed changes
 
 [node name="Music" type="HSlider" parent="Audio/Sliders"]
 modulate = Color(0.803922, 0.85098, 0.988235, 1)
@@ -382,10 +406,16 @@ self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
 material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 max_value = 50.0
 step = 0.0
 allow_greater = true
 allow_lesser = true
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [node name="Master" type="HSlider" parent="Audio/Sliders"]
 modulate = Color(0.803922, 0.85098, 0.988235, 1)
@@ -393,10 +423,16 @@ self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
 material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 max_value = 50.0
 step = 0.0
 allow_greater = true
 allow_lesser = true
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Audio"]
 layout_mode = 1
@@ -420,6 +456,8 @@ flat = true
 [node name="Home" parent="." instance=ExtResource("4_ppayp")]
 visible = false
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="Credits" type="Control" parent="."]
 visible = false
 anchors_preset = 0
@@ -437,14 +475,32 @@ flat = true
 
 [connection signal="pressed" from="Title-Screne/TextureRect/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Title-Screne/Quit" to="." method="_on_quit_pressed"]
+=======
+[connection signal="pressed" from="Title-Screne/TextureRect/Play" to="." method="_on_play_pressed"]
+>>>>>>> Stashed changes
+=======
+[connection signal="pressed" from="Title-Screne/TextureRect/Play" to="." method="_on_play_pressed"]
+>>>>>>> Stashed changes
 [connection signal="pressed" from="Main-Menu/Menu-Options/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Options/VBoxContainer/Audio" to="." method="_on_audio_pressed"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [connection signal="pressed" from="Options/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 [connection signal="pressed" from="Options/VBoxContainer/Back-Settings" to="." method="_on_back_settings_pressed"]
 [connection signal="value_changed" from="Audio/Sliders/Sound FX" to="." method="_on_sound_fx_value_changed"]
 [connection signal="value_changed" from="Audio/Sliders/Music" to="." method="_on_music_value_changed"]
 [connection signal="value_changed" from="Audio/Sliders/Master" to="." method="_on_master_value_changed"]
 [connection signal="pressed" from="Audio/VBoxContainer2/Back-Audio" to="." method="_on_back_audio_pressed"]
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [connection signal="pressed" from="Credits/Back" to="." method="_on_back_pressed"]
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes

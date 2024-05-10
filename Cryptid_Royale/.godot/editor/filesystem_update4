@@ -1,3 +1,5 @@
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 res://models/tongueMonster/tongueMonster.tscn
 res://scenes/menu/menu.tscn
 res://Player.gd
@@ -19,3 +21,13 @@ res://models/wendigo/wendigoodtoGo.cs
 res://models/werewolf/wereWolfBro.cs
 res://scenes/battleHandler.cs
 res://scenes/characterHandler.cs
+=======
+res://scenes/menu/menu.tscn
+res://scenes/home/home.tscn
+res://scenes/board.tscn
+>>>>>>> Stashed changes
+=======
+res://scenes/menu/menu.tscn
+res://scenes/home/home.tscn
+res://scenes/board.tscn
+>>>>>>> Stashed changes

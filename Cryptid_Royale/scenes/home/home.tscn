@@ -3987,7 +3987,15 @@ offset_bottom = 40.0
 [node name="Wall-Border-Up" type="Sprite2D" parent="AspectRatioContainer"]
 modulate = Color(0.37813, 0.224407, 0.150704, 1)
 self_modulate = Color(0.37813, 0.224407, 0.150704, 1)
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 position = Vector2(212, -2)
+=======
+position = Vector2(211.75, -3.625)
+>>>>>>> Stashed changes
+=======
+position = Vector2(211.75, -3.625)
+>>>>>>> Stashed changes
 scale = Vector2(-1.66954, 12.097)
 texture = SubResource("CurveXYZTexture_mwefq")
 

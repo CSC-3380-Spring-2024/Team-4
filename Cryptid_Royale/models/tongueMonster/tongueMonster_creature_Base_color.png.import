@@ -3,7 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://n6gshgtb5cpx"
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 path.s3tc="res://.godot/imported/tongueMonster_creature_Base_color.png-40e92200e3b9d6a0f42c26f15468d682.s3tc.ctex"
+=======
+path.s3tc="res://.godot/imported/tongueMonster_creature_Base_color.png-5c697b79498d2ad66510f21a2844f74c.s3tc.ctex"
+>>>>>>> Stashed changes
+=======
+path.s3tc="res://.godot/imported/tongueMonster_creature_Base_color.png-5c697b79498d2ad66510f21a2844f74c.s3tc.ctex"
+>>>>>>> Stashed changes
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +19,18 @@ metadata={
 
 [deps]
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 source_file="res://combatArea copy 7/models/tongueMonster_creature_Base_color.png"
 dest_files=["res://.godot/imported/tongueMonster_creature_Base_color.png-40e92200e3b9d6a0f42c26f15468d682.s3tc.ctex"]
+=======
+source_file="res://models/tongueMonster/tongueMonster_creature_Base_color.png"
+dest_files=["res://.godot/imported/tongueMonster_creature_Base_color.png-5c697b79498d2ad66510f21a2844f74c.s3tc.ctex"]
+>>>>>>> Stashed changes
+=======
+source_file="res://models/tongueMonster/tongueMonster_creature_Base_color.png"
+dest_files=["res://.godot/imported/tongueMonster_creature_Base_color.png-5c697b79498d2ad66510f21a2844f74c.s3tc.ctex"]
+>>>>>>> Stashed changes
 
 [params]
 

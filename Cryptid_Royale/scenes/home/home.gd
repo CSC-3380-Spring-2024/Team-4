@@ -15,6 +15,8 @@ func _ready():
 	travPort.play("Travel-Portal")
 	batPort.play("Quick-Battle-Portal")
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 func _on_deck_pressed():
 	get_tree().change_scene_to_file("res://Cards/cryptdex.tscn");
 
@@ -24,18 +26,64 @@ func _on_area_2d_body_entered(body):
 func _on_area_2d_body_exited(body):
 	exit.hide()
 
+=======
+=======
+>>>>>>> Stashed changes
+
+
+
+
+
+func _on_deck_pressed():
+	get_tree().change_scene_to_file("res://Cards/cryptdex.tscn");
+
+
+
+func _on_area_2d_body_entered(body):
+	exit.show()
+
+
+func _on_area_2d_body_exited(body):
+	exit.hide()
+
+
+
+
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 func _on_area_2d_2_body_entered(body):
 	if body.has_method("body_method"):
 		get_tree().change_scene_to_file("res://scenes/menu/menu.tscn")
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+=======
+
+>>>>>>> Stashed changes
 func _on_q_bentry_body_entered(body):
 	if body.has_method("body_method"):
 		get_tree().change_scene_to_file("res://scenes/board.tscn")
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
+=======
+
+>>>>>>> Stashed changes
 func _on_travelenrty_body_entered(body):
 	if body.has_method("body_method"):
 		get_tree().change_scene_to_file("res://scenes/map/map.tscn");
 
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 func _on_exitarea_body_entered(body):
 	exit.show()
 
@@ -48,6 +96,31 @@ func _on_tagarea_body_entered(body):
 func _on_tagarea_body_exited(body):
 	portal.hide()
 
+=======
+=======
+>>>>>>> Stashed changes
+
+func _on_exitarea_body_entered(body):
+	exit.show()
+
+
+func _on_exitarea_body_exited(body):
+	exit.hide()
+
+
+
+func _on_tagarea_body_entered(body):
+	portal.show()
+
+
+func _on_tagarea_body_exited(body):
+	portal.hide()
+
+
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 func _on_cryptdex_body_entered(body):
 	if body.has_method("body_method"):
 		get_tree().change_scene_to_file("res://Cards/cryptdex.tscn");
