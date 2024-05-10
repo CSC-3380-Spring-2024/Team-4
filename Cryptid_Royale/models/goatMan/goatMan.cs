@@ -46,6 +46,40 @@ public partial class goatMan : CharacterBody3D
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
 		if(Input.IsActionPressed("selP3")){
+			// Add the gravity.
+			if (!IsOnFloor())
+				goatvelocity.Y -= goatgravity * (float)delta;
+			else{
+				// Handle Jump.
+				//if (Input.IsActionJustPressed("ui_accept") && IsOnFloor() )
+				//velocity.Y = JumpVelocity;
+				if (Input.IsActionJustPressed("spaceAttack"))
+					punched = true;
+				goat_anim.Set("parameters/conditions/attack", punched);
+			}
+		
+		if (goat_animPlayback.GetCurrentNode() == "attack"){
+			goatvelocity = Vector3.Zero;
+			Velocity = goatvelocity;
+			return;
+		}
+			// Add the gravity.
+			if (!IsOnFloor())
+				goatvelocity.Y -= goatgravity * (float)delta;
+			else{
+				// Handle Jump.
+				//if (Input.IsActionJustPressed("ui_accept") && IsOnFloor() )
+				//velocity.Y = JumpVelocity;
+				if (Input.IsActionJustPressed("spaceAttack"))
+					punched = true;
+				goat_anim.Set("parameters/conditions/attack", punched);
+		}
+		
+		if (goat_animPlayback.GetCurrentNode() == "attack"){
+			goatvelocity = Vector3.Zero;
+			Velocity = goatvelocity;
+			return;
+		}
 			float turnStrength = Input.GetAxis("left", "right");
 			float moveStrength = Input.GetAxis("forward", "backwards");
 			
@@ -65,5 +99,8 @@ public partial class goatMan : CharacterBody3D
 			Velocity = goatvelocity;
 			MoveAndSlide();
 		}
+	}
+	public void isInHitBox(Area3D area){
+		GD.Print("Fight!!");
 	}
 }

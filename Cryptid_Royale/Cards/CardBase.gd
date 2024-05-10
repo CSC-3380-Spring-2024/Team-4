@@ -1,6 +1,6 @@
 extends TextureButton
 
-var Cardname = "Bigfoot"
+var Cardname = "Megalodon"
 
 @onready var CardDatabase = load("res://Cards/CardDatabase.gd")
 @onready var CardInfo = CardDatabase.DATA[CardDatabase.get(Cardname)]

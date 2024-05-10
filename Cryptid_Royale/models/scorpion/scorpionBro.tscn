@@ -1,8 +1,8 @@
 [gd_scene load_steps=24 format=3 uid="uid://cnlfrme1qpnpu"]
 
-[ext_resource type="Script" path="res://models/scorpion/scorpion2.cs" id="1_saebo"]
-[ext_resource type="Texture2D" uid="uid://brxvd6jsu1iii" path="res://models/scorpion/scorpion_low_scorpion_Emission.png" id="2_osbss"]
-[ext_resource type="Texture2D" uid="uid://c5itrqckply8t" path="res://models/scorpion/scorpion_low_scorpion_Normal.png" id="3_snfhk"]
+[ext_resource type="Script" path="res://Characters/scorpion/scorpion2.cs" id="1_saebo"]
+[ext_resource type="Texture2D" uid="uid://brxvd6jsu1iii" path="res://Characters/scorpion/scorpion_low_scorpion_Emission.png" id="2_osbss"]
+[ext_resource type="Texture2D" uid="uid://c5itrqckply8t" path="res://Characters/scorpion/scorpion_low_scorpion_Normal.png" id="3_snfhk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_648la"]
 resource_name = "scorpion"

@@ -25,25 +25,28 @@ public partial class fishMonster : CharacterBody3D
 		fishMonstervelocity = Velocity;
 		bool punched = false;
 
-		// Add the gravity.
-		if (!IsOnFloor())
-			fishMonstervelocity.Y -= fishMonstergravity * (float)delta;
-		else{
-			if (Input.IsActionJustPressed("spaceAttack"))
-				punched = true;
-			fishMonster_anim.Set("parameters/conditions/attack", punched);
-		}
+		
 
 		// Handle Jump.
+		/*
 		if (fishMonster_animPlayback.GetCurrentNode() == "attack"){
 			fishMonstervelocity = Vector3.Zero;
 			Velocity = fishMonstervelocity;
 		}
+		*/
 			//fishMonstervelocity.Y = JumpVelocity;
 
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
 		if(Input.IsActionPressed("selP2")){
+			// Add the gravity.
+			if (!IsOnFloor())
+				fishMonstervelocity.Y -= fishMonstergravity * (float)delta;
+			else{
+				if (Input.IsActionJustPressed("spaceAttack"))
+					punched = true;
+				fishMonster_anim.Set("parameters/conditions/attack", punched);
+			}
 			float turnStrength = Input.GetAxis("left", "right");
 			float moveStrength = Input.GetAxis("forward", "backwards");
 			RotateY(-Mathf.DegToRad(turnStrength * fishMonsterRotationVelocity));
@@ -63,5 +66,9 @@ public partial class fishMonster : CharacterBody3D
 			Velocity = fishMonstervelocity;
 			MoveAndSlide();
 		}
+	}
+	
+	public void isInHitBox(Area3D area){
+		GD.Print("Fight!!");
 	}
 }

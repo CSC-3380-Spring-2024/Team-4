@@ -222,7 +222,17 @@ grow_vertical = 2
 scale = Vector2(0.991948, 1)
 text = "Press to start"
 
+[node name="Quit" type="Button" parent="Title-Screne"]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 227.0
+offset_right = 261.0
+offset_bottom = 258.0
+scale = Vector2(0.598536, 0.381293)
+text = "Exit"
+
 [node name="Main-Menu" type="Control" parent="."]
+visible = false
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
@@ -307,7 +317,6 @@ text = "Back"
 flat = true
 
 [node name="Audio" type="Control" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -362,7 +371,10 @@ self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
 material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-value = 1.0
+max_value = 50.0
+step = 0.0
+allow_greater = true
+allow_lesser = true
 
 [node name="Music" type="HSlider" parent="Audio/Sliders"]
 modulate = Color(0.803922, 0.85098, 0.988235, 1)
@@ -370,6 +382,10 @@ self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
 material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
+max_value = 50.0
+step = 0.0
+allow_greater = true
+allow_lesser = true
 
 [node name="Master" type="HSlider" parent="Audio/Sliders"]
 modulate = Color(0.803922, 0.85098, 0.988235, 1)
@@ -377,6 +393,10 @@ self_modulate = Color(0.988235, 0.988235, 0.988235, 1)
 material = SubResource("CanvasItemMaterial_odt0w")
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
+max_value = 50.0
+step = 0.0
+allow_greater = true
+allow_lesser = true
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="Audio"]
 layout_mode = 1
@@ -400,13 +420,31 @@ flat = true
 [node name="Home" parent="." instance=ExtResource("4_ppayp")]
 visible = false
 
+[node name="Credits" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 428.0
+offset_bottom = 240.0
+
+[node name="Back" type="Button" parent="Credits"]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 168.0
+offset_right = 235.0
+offset_bottom = 199.0
+text = "Back"
+flat = true
+
 [connection signal="pressed" from="Title-Screne/TextureRect/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Title-Screne/Quit" to="." method="_on_quit_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Options" to="." method="_on_options_pressed"]
 [connection signal="pressed" from="Main-Menu/Menu-Options/Exit" to="." method="_on_exit_pressed"]
 [connection signal="pressed" from="Options/VBoxContainer/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Options/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="Options/VBoxContainer/Back-Settings" to="." method="_on_back_settings_pressed"]
 [connection signal="value_changed" from="Audio/Sliders/Sound FX" to="." method="_on_sound_fx_value_changed"]
 [connection signal="value_changed" from="Audio/Sliders/Music" to="." method="_on_music_value_changed"]
 [connection signal="value_changed" from="Audio/Sliders/Master" to="." method="_on_master_value_changed"]
 [connection signal="pressed" from="Audio/VBoxContainer2/Back-Audio" to="." method="_on_back_audio_pressed"]
+[connection signal="pressed" from="Credits/Back" to="." method="_on_back_pressed"]

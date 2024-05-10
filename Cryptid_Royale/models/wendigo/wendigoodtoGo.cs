@@ -24,18 +24,6 @@ public partial class wendigoodtoGo : CharacterBody3D
 	{
 		velocity = Velocity;
 		bool punched = false;
-
-		// Add the gravity.
-		if (!IsOnFloor())
-			velocity.Y -= gravity * (float)delta;
-		else{
-			// Handle Jump.
-			//if (Input.IsActionJustPressed("ui_accept") && IsOnFloor() )
-				//velocity.Y = JumpVelocity;
-			if (Input.IsActionJustPressed("spaceAttack"))
-				punched = true;
-			_anim.Set("parameters/conditions/attack", punched);
-		}
 		
 		/*if (_animPlayback.GetCurrentNode() == "attack"){
 			velocity = Vector3.Zero;
@@ -48,6 +36,17 @@ public partial class wendigoodtoGo : CharacterBody3D
 		// Get the input direction and handle the movement/deceleration.
 		// As good practice, you should replace UI actions with custom gameplay actions.
 		if(Input.IsActionPressed("selP6")){
+			// Add the gravity.
+			if (!IsOnFloor())
+				velocity.Y -= gravity * (float)delta;
+			else{
+				// Handle Jump.
+				//if (Input.IsActionJustPressed("ui_accept") && IsOnFloor() )
+				//velocity.Y = JumpVelocity;
+				if (Input.IsActionJustPressed("spaceAttack"))
+					punched = true;
+				_anim.Set("parameters/conditions/attack", punched);
+			}
 			float turnStrength = Input.GetAxis("left", "right");
 			float moveStrength = Input.GetAxis("forward", "backwards");
 			
@@ -67,5 +66,8 @@ public partial class wendigoodtoGo : CharacterBody3D
 			Velocity = velocity;
 			MoveAndSlide();
 		}
+	}
+	public void isInHitBox(Area3D area){
+		GD.Print("Fight!!");
 	}
 }

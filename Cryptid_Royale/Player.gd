@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed: float = 1
+var speed: float = 3
 var flag: bool  = false
 var flagb: bool = true
 @onready var animations = $AnimationPlayer
@@ -8,15 +8,15 @@ var flagb: bool = true
 func _physics_process(delta):
 	if Input.is_key_pressed(KEY_W):
 		animations.play("Walk-up")
-		position.y -= speed
+		position.y -= speed * 0.5
 		flag = true
 	elif Input.is_key_pressed(KEY_A):
 		animations.play("Walk-left")
-		position.x -= speed
+		position.x -= speed 
 		flag = false
 	elif Input.is_key_pressed(KEY_S):
 		animations.play("Walk-down")
-		position.y += speed
+		position.y += speed * 0.5
 		flag = false
 	elif Input.is_key_pressed(KEY_D):
 		animations.play("Walk-right")

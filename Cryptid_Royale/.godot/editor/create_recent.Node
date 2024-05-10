@@ -1,4 +1,5 @@
 Button
+Control
 CollisionShape3D
 Camera3D
 MeshInstance3D
@@ -7,4 +8,3 @@ Sprite2D
 CollisionShape2D
 Area2D
 TileMap
-Control

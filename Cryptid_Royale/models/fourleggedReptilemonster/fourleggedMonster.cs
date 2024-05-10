@@ -3,6 +3,8 @@ using System;
 
 public partial class fourleggedMonster : CharacterBody3D
 {
+	bool inHitRange = false;
+
 	public const float lizardSpeed = 4.0f;
 	public const float JumpVelocity = 3.5f;
 	public const float lizardRotationVelocity = 3.5f;
@@ -41,6 +43,19 @@ public partial class fourleggedMonster : CharacterBody3D
 		}
 
 		if(Input.IsActionPressed("selP4")){
+			// Add the gravity.
+			if (!IsOnFloor())
+				lizardvelocity.Y -= lizardgravity * (float)delta;
+			else{
+				if (Input.IsActionJustPressed("spaceAttack"))
+					punched = true;
+				lizard_anim.Set("parameters/conditions/attack", punched);
+			}
+			if (lizard_animPlayback.GetCurrentNode() == "attack"){
+				lizardvelocity = Vector3.Zero;
+				Velocity = lizardvelocity;
+				return;
+			}
 			float turnStrength = Input.GetAxis("left", "right");
 			float moveStrength = Input.GetAxis("forward", "backwards");
 			
@@ -60,5 +75,8 @@ public partial class fourleggedMonster : CharacterBody3D
 			Velocity = lizardvelocity;
 			MoveAndSlide();
 		}
+	}
+	public void isInHitBox(Area3D area){
+		GD.Print("Fight!!");
 	}
 }

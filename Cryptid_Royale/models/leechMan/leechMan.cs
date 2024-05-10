@@ -25,26 +25,44 @@ public partial class leechMan : CharacterBody3D
 		leechvelocity = Velocity;
 		bool punched = false;
 
-		// Add the gravity.
-		if (!IsOnFloor())
-			leechvelocity.Y -= leechgravity * (float)delta;
-		else{
-			// Handle Jump.
-			//if (Input.IsActionJustPressed("ui_accept") && IsOnFloor() )
-				//velocity.Y = JumpVelocity;
-			if (Input.IsActionJustPressed("spaceAttack"))
-				punched = true;
-			leech_anim.Set("parameters/conditions/attack", punched);
-		}
+		
+		// Get the input direction and handle the movement/deceleration.
+		// As good practice, you should replace UI actions with custom gameplay actions.
+		if(Input.IsActionPressed("selP5")){
+				// Add the gravity.
+			if (!IsOnFloor())
+				leechvelocity.Y -= leechgravity * (float)delta;
+			else{
+				// Handle Jump.
+				//if (Input.IsActionJustPressed("ui_accept") && IsOnFloor() )
+					//velocity.Y = JumpVelocity;
+				if (Input.IsActionJustPressed("spaceAttack"))
+					punched = true;
+				leech_anim.Set("parameters/conditions/attack", punched);
+			}
 		
 		if (leech_animPlayback.GetCurrentNode() == "attack"){
 			leechvelocity = Vector3.Zero;
 			Velocity = leechvelocity;
 			return;
 		}
-		// Get the input direction and handle the movement/deceleration.
-		// As good practice, you should replace UI actions with custom gameplay actions.
-		if(Input.IsActionPressed("selP5")){
+			// Add the gravity.
+			if (!IsOnFloor())
+				leechvelocity.Y -= leechgravity * (float)delta;
+			else{
+				// Handle Jump.
+				//if (Input.IsActionJustPressed("ui_accept") && IsOnFloor() )
+				//velocity.Y = JumpVelocity;
+				if (Input.IsActionJustPressed("spaceAttack"))
+					punched = true;
+				leech_anim.Set("parameters/conditions/attack", punched);
+			}
+		
+		if (leech_animPlayback.GetCurrentNode() == "attack"){
+			leechvelocity = Vector3.Zero;
+			Velocity = leechvelocity;
+			return;
+		}
 			float turnStrength = Input.GetAxis("left", "right");
 			float moveStrength = Input.GetAxis("forward", "backwards");
 			
@@ -64,6 +82,9 @@ public partial class leechMan : CharacterBody3D
 			Velocity = leechvelocity;
 			MoveAndSlide();
 		}
+	}
+	public void isInHitBox(Area3D area){
+		GD.Print("Fight!!");
 	}
 	//private void _on_area_3d_input_event(Node camera, InputEvent @event, Vector3 position, Vector3 normal, long shape_idx)
 	//{
